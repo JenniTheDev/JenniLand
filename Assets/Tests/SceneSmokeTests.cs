@@ -12,7 +12,7 @@ namespace UnityEditor.TestTools
     public class SceneSmokeTests
     {
         private string levelToSmoke;
-        private LogSeverityTracker logSeverityTracker;
+        private LogSeverityTracker logSeverityTracker = new();
 
         [Preserve]
         public SceneSmokeTests(string levelToTest)
@@ -23,8 +23,9 @@ namespace UnityEditor.TestTools
         [OneTimeSetUp]
         public void LoadScene()
         {
-            logSeverityTracker.IgnoredMessages.AddRange(new[] { "Log", "Warning" });
             logSeverityTracker.Register();
+            logSeverityTracker.IgnoredMessages.AddRange(new[] { "Log" });
+            // logSeverityTracker.Register();
             SceneManager.LoadScene(levelToSmoke);
         }
 
