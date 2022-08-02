@@ -6,46 +6,49 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Scripting;
 using UnityEngine.TestTools;
 
-[TestFixtureSource(typeof(AllRequiredLevelsProvider))]
-public class SceneSmokeTests
+namespace UnityEditor.TestTools
 {
-    private string levelToSmoke;
-    private LogSeverityTracker logSeverityTracker;
-
-    [Preserve]
-    public SceneSmokeTests(string levelToTest)
+    [TestFixtureSource(typeof(AllRequiredLevelsProvider))]
+    public class SceneSmokeTests
     {
-        levelToSmoke = levelToTest;
-    }
+        private string levelToSmoke;
+        private LogSeverityTracker logSeverityTracker;
 
-    [OneTimeSetUp]
-    public void LoadScene()
-    {
-        logSeverityTracker.IgnoredMessages.AddRange(new[] { "Log", "Warning" });
-        logSeverityTracker.Register();
-        SceneManager.LoadScene(levelToSmoke);
-    }
+        [Preserve]
+        public SceneSmokeTests(string levelToTest)
+        {
+            levelToSmoke = levelToTest;
+        }
 
-    [Test, Order(1)]
-    public void LoadsClean()
-    {
-        logSeverityTracker.Reset();
-        logSeverityTracker.AssertCleanLog();
-    }
+        [OneTimeSetUp]
+        public void LoadScene()
+        {
+            logSeverityTracker.IgnoredMessages.AddRange(new[] { "Log", "Warning" });
+            logSeverityTracker.Register();
+            SceneManager.LoadScene(levelToSmoke);
+        }
 
-    [UnityTest, Order(2)]
-    public IEnumerator RunsClean()
-    {
-        logSeverityTracker.Reset();
-        yield return new WaitForSeconds(5);
-        logSeverityTracker.AssertCleanLog();
-    }
+        [Test, Order(1)]
+        public void LoadsClean()
+        {
+            logSeverityTracker.Reset();
+            logSeverityTracker.AssertCleanLog();
+        }
 
-    [UnityTest, Order(3)]
-    public IEnumerator UnloadsClean()
-    {
-        logSeverityTracker.Reset();
-        yield return SceneManager.LoadSceneAsync("JenniMenu");
-        logSeverityTracker.AssertCleanLog();
+        [UnityTest, Order(2)]
+        public IEnumerator RunsClean()
+        {
+            logSeverityTracker.Reset();
+            yield return new WaitForSeconds(10);
+            logSeverityTracker.AssertCleanLog();
+        }
+
+        [UnityTest, Order(3)]
+        public IEnumerator UnloadsClean()
+        {
+            logSeverityTracker.Reset();
+            yield return SceneManager.LoadSceneAsync("JenniMenu");
+            logSeverityTracker.AssertCleanLog();
+        }
     }
 }
