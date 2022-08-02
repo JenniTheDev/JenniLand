@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/JenniMenu.unity
+    guid: 89525a974a123f845ba5af83afe433da
+  - enabled: 1
+    path: Assets/Scenes/JenniRun.unity
+    guid: 38072bd1001c3454395e581a48b67e41
+  - enabled: 1
+    path: Assets/Scenes/JenniJump.unity
+    guid: d0032c118a3e6cd4681fb137ab614087
+  - enabled: 1
+    path: Assets/Scenes/JenniSays.unity
+    guid: f00db5845c282ca4480dfcf76cf78fa1
   m_configObjects: {}
