@@ -13,6 +13,7 @@ namespace UnityEditor.TestTools
     {
         private string levelToSmoke;
         private LogSeverityTracker logSeverityTracker = new();
+        private int secondsToWait = 5;
 
         [Preserve]
         public SceneSmokeTests(string levelToTest)
@@ -40,7 +41,7 @@ namespace UnityEditor.TestTools
         public IEnumerator RunsClean()
         {
             logSeverityTracker.Reset();
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(secondsToWait);
             logSeverityTracker.AssertCleanLog();
         }
 

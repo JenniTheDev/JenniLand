@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageReport scope="Summary">
+  <Summary>
+    <Generatedon>8/2/2022 - 5:35:29 PM</Generatedon>
+    <Parser>MultiReportParser (2x OpenCoverParser)</Parser>
+    <Assemblies>2</Assemblies>
+    <Classes>7</Classes>
+    <Files>7</Files>
+    <Coveredlines>50</Coveredlines>
+    <Uncoveredlines>52</Uncoveredlines>
+    <Coverablelines>102</Coverablelines>
+    <Totallines>228</Totallines>
+    <Linecoverage>49</Linecoverage>
+    <Coveredbranches>0</Coveredbranches>
+    <Totalbranches>0</Totalbranches>
+  </Summary>
+  <Coverage>
+    <Assembly name="Assembly-CSharp" classes="3" coverage="0" coveredlines="0" coverablelines="23" totallines="61" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="InputWindow" coverage="0" coveredlines="0" coverablelines="4" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="SceneChanger" coverage="0" coveredlines="0" coverablelines="12" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="UserData" coverage="0" coveredlines="0" coverablelines="7" totallines="16" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    </Assembly>
+    <Assembly name="Tests" classes="4" coverage="63.2" coveredlines="50" coverablelines="79" totallines="167" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="AllRequiredLevelsProvider" coverage="100" coveredlines="9" coverablelines="9" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="LogSeverityTracker" coverage="38" coveredlines="16" coverablelines="42" totallines="78" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="PlaymodeTests" coverage="0" coveredlines="0" coverablelines="3" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="UnityEditor.TestTools.SceneSmokeTests" coverage="100" coveredlines="25" coverablelines="25" totallines="56" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    </Assembly>
+  </Coverage>
+</CoverageReport>

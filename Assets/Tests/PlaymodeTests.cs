@@ -6,9 +6,4 @@ using UnityEngine.TestTools;
 
 public class PlaymodeTests
 {
-    [Test]
-    public void SceneLoadingTest()
-    {
-        SceneManager.LoadScene("Scenes/JenniMenu");
-    }
 }
