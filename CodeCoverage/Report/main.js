@@ -224,21 +224,21 @@ var assemblies = [
   {
     "name": "Assembly-CSharp",
     "classes": [
-      { "name": "InputWindow", "rp": "Assembly_CSharp_InputWindow.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [0], "bch": [], "hc": [{ "et": "8/2/2022 - 5:35:28 PM", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "lcq": 0, "cb": 0, "tb": 0, "bcq": 0 }] },
-      { "name": "SceneChanger", "rp": "Assembly_CSharp_SceneChanger.html", "cl": 0, "ucl": 12, "cal": 12, "tl": 27, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [0], "bch": [], "hc": [{ "et": "8/2/2022 - 5:35:28 PM", "cl": 0, "ucl": 12, "cal": 12, "tl": 27, "lcq": 0, "cb": 0, "tb": 0, "bcq": 0 }] },
-      { "name": "UserData", "rp": "Assembly_CSharp_UserData.html", "cl": 0, "ucl": 7, "cal": 7, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [0], "bch": [], "hc": [{ "et": "8/2/2022 - 5:35:28 PM", "cl": 0, "ucl": 7, "cal": 7, "tl": 16, "lcq": 0, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "InputWindow", "rp": "Assembly_CSharp_InputWindow.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [0], "bch": [], "hc": [{ "et": "8/2/2022 - 5:35:28 PM", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "lcq": 0, "cb": 0, "tb": 0, "bcq": 0 }, { "et": "8/2/2022 - 7:39:21 PM", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "lcq": 0, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "SceneChanger", "rp": "Assembly_CSharp_SceneChanger.html", "cl": 0, "ucl": 12, "cal": 12, "tl": 27, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [0], "bch": [], "hc": [{ "et": "8/2/2022 - 5:35:28 PM", "cl": 0, "ucl": 12, "cal": 12, "tl": 27, "lcq": 0, "cb": 0, "tb": 0, "bcq": 0 }, { "et": "8/2/2022 - 7:39:21 PM", "cl": 0, "ucl": 12, "cal": 12, "tl": 27, "lcq": 0, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "UserData", "rp": "Assembly_CSharp_UserData.html", "cl": 0, "ucl": 7, "cal": 7, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [0], "bch": [], "hc": [{ "et": "8/2/2022 - 5:35:28 PM", "cl": 0, "ucl": 7, "cal": 7, "tl": 16, "lcq": 0, "cb": 0, "tb": 0, "bcq": 0 }, { "et": "8/2/2022 - 7:39:21 PM", "cl": 0, "ucl": 7, "cal": 7, "tl": 16, "lcq": 0, "cb": 0, "tb": 0, "bcq": 0 }] },
     ]},
   {
     "name": "Tests",
     "classes": [
-      { "name": "AllRequiredLevelsProvider", "rp": "Tests_AllRequiredLevelsProvider.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 19, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [100], "bch": [], "hc": [{ "et": "8/2/2022 - 5:35:28 PM", "cl": 9, "ucl": 0, "cal": 9, "tl": 19, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }] },
-      { "name": "LogSeverityTracker", "rp": "Tests_LogSeverityTracker.html", "cl": 16, "ucl": 26, "cal": 42, "tl": 78, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [38], "bch": [], "hc": [{ "et": "8/2/2022 - 5:35:28 PM", "cl": 16, "ucl": 26, "cal": 42, "tl": 78, "lcq": 38, "cb": 0, "tb": 0, "bcq": 0 }] },
-      { "name": "PlaymodeTests", "rp": "Tests_PlaymodeTests.html", "cl": 0, "ucl": 3, "cal": 3, "tl": 14, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [0], "bch": [], "hc": [{ "et": "8/2/2022 - 5:35:28 PM", "cl": 0, "ucl": 3, "cal": 3, "tl": 14, "lcq": 0, "cb": 0, "tb": 0, "bcq": 0 }] },
-      { "name": "UnityEditor.TestTools.SceneSmokeTests", "rp": "Tests_SceneSmokeTests.html", "cl": 25, "ucl": 0, "cal": 25, "tl": 56, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [100], "bch": [], "hc": [{ "et": "8/2/2022 - 5:35:28 PM", "cl": 25, "ucl": 0, "cal": 25, "tl": 56, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "AllRequiredLevelsProvider", "rp": "Tests_AllRequiredLevelsProvider.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 19, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [100], "bch": [], "hc": [{ "et": "8/2/2022 - 5:35:28 PM", "cl": 9, "ucl": 0, "cal": 9, "tl": 19, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }, { "et": "8/2/2022 - 7:39:21 PM", "cl": 9, "ucl": 0, "cal": 9, "tl": 19, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "LogSeverityTracker", "rp": "Tests_LogSeverityTracker.html", "cl": 16, "ucl": 26, "cal": 42, "tl": 78, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [38], "bch": [], "hc": [{ "et": "8/2/2022 - 5:35:28 PM", "cl": 16, "ucl": 26, "cal": 42, "tl": 78, "lcq": 38, "cb": 0, "tb": 0, "bcq": 0 }, { "et": "8/2/2022 - 7:39:21 PM", "cl": 16, "ucl": 26, "cal": 42, "tl": 78, "lcq": 38, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "PlaymodeTests", "rp": "Tests_PlaymodeTests.html", "cl": 0, "ucl": 3, "cal": 3, "tl": 9, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [0,0], "bch": [], "hc": [{ "et": "8/2/2022 - 5:35:28 PM", "cl": 0, "ucl": 3, "cal": 3, "tl": 14, "lcq": 0, "cb": 0, "tb": 0, "bcq": 0 }, { "et": "8/2/2022 - 7:39:21 PM", "cl": 0, "ucl": 3, "cal": 3, "tl": 9, "lcq": 0, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "UnityEditor.TestTools.SceneSmokeTests", "rp": "Tests_SceneSmokeTests.html", "cl": 25, "ucl": 0, "cal": 25, "tl": 56, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [100], "bch": [], "hc": [{ "et": "8/2/2022 - 5:35:28 PM", "cl": 25, "ucl": 0, "cal": 25, "tl": 56, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }, { "et": "8/2/2022 - 7:39:21 PM", "cl": 25, "ucl": 0, "cal": 25, "tl": 56, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }] },
     ]},
 ];
 
-var historicCoverageExecutionTimes = [];
+var historicCoverageExecutionTimes = ["8/2/2022 - 5:35:28 PM"];
 
 var riskHotspotMetrics = [
 ];
