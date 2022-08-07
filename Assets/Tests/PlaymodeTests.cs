@@ -4,8 +4,9 @@ using NUnit.Framework;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 using UnityEditor.TestTools;
+using UnityEngine.InputSystem;
 
-public class PlaymodeTests
+public class PlaymodeTests : InputTestFixture
 {
     // This should be an edit mode test, but when I put it in edit mode
     // It doesn't see UserData as a class
@@ -16,5 +17,12 @@ public class PlaymodeTests
         var userData = new UserData(69, "TestUser");
         Assert.That(userData.Id, Is.EqualTo(69), "Id is wrong.");
         Assert.That(userData.UserName, Is.EqualTo("TestUser"), "User name is wrong.");
+    }
+
+    [Test]
+    public void CanPressButtonOnGamepad()
+    {
+        var gamepad = InputSystem.AddDevice<Gamepad>();
+        Press(gamepad.buttonSouth);
     }
 }
