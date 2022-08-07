@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
+using UnityEditor.TestTools;
 
 public class PlaymodeTests
 {
