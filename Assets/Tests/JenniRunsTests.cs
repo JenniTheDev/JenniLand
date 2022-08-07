@@ -52,7 +52,9 @@ public class JenniRunsTests
         var startingPosition = player.transform.position.y;
         inputTestFixture.Press(gamepad.buttonSouth, 4);
         yield return new WaitForSeconds(1f);
+        // I think the ending position is getting the transform at the wrong time
         var endingPosition = player.transform.position.y;
+        // The positions are always the same
         Assert.That(endingPosition, Is.Not.EqualTo(startingPosition), "Player did not jump using gamepad.");
     }
 
@@ -64,6 +66,13 @@ public class JenniRunsTests
         yield return new WaitForSeconds(0.5f);
         var endingPosition = player.transform.position.y;
         Assert.That(endingPosition, Is.GreaterThan(startingPosition), "Player did not jump using keyboard.");
+    }
+
+    [UnityTest]
+    public IEnumerator CheckMaxFallVeloctyTest()
+    {
+        // jump a lot ?
+        yield return new WaitForSeconds(10f);
     }
 
     [Test]
