@@ -43,41 +43,44 @@ public class JenniRunsTests
         Assert.That(player, Is.Not.Null, "Player prefab is not found");
         Assert.That(player.GetComponent<Collider2D>(), Is.Not.Null, "Player is missing collider");
         Assert.That(player.GetComponent<Rigidbody2D>(), Is.Not.Null, "Player is missing rigidbody");
-        Assert.That(player.GetComponent<PlayerInput>(), Is.Not.Null, "Player input is missing");
+        Assert.That(player.GetComponent<JumpControl>(), Is.Not.Null, "Player input is missing");
     }
 
-    [Test]
-    public void PlayerMovementXAxisTest()
+    [UnityTest]
+    public IEnumerator PlayerGamePadJumpTest()
     {
-        var startingPosition = player.transform.position.x;
-        inputTestFixture.Press(gamepad.leftStick.right);
-        inputTestFixture.Set(gamepad.leftStick, new Vector2(1, 0));
-        var endingPosition = player.transform.position.x;
-        Assert.That(endingPosition, Is.GreaterThan(startingPosition), "Player did not move using gamepad.");
-
-        inputTestFixture.Press(keyboard.dKey, 10);
-
-        endingPosition = player.transform.position.x;
-        Assert.That(endingPosition, Is.GreaterThan(startingPosition), "Player did not move using keyboard.");
+        var startingPosition = player.transform.position.y;
+        inputTestFixture.Press(gamepad.buttonSouth, 4);
+        yield return new WaitForSeconds(1f);
+        var endingPosition = player.transform.position.y;
+        Assert.That(endingPosition, Is.Not.EqualTo(startingPosition), "Player did not jump using gamepad.");
     }
 
-    public void PlayerMovementJumpTest()
+    [UnityTest]
+    public IEnumerator PlayerKeyboardJumpTest()
     {
+        var startingPosition = player.transform.position.y;
+        inputTestFixture.Press(keyboard.spaceKey, 4);
+        yield return new WaitForSeconds(0.5f);
+        var endingPosition = player.transform.position.y;
+        Assert.That(endingPosition, Is.GreaterThan(startingPosition), "Player did not jump using keyboard.");
     }
 
     [Test]
     public void SceneHasAllComponents()
     {
         // How do I get the camera object?
+        // Assert.That(Assets)
+        Assert.That(player.gameObject, Is.Not.Null, "Player is missing");
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator JenniRunsTestsWithEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
-    }
+    // [UnityTest]
+    // public IEnumerator JenniRunsTestsWithEnumeratorPasses()
+    // {
+    // Use the Assert class to test conditions.
+    // Use yield to skip a frame.
+    //    yield return null;
+    // }
 }
