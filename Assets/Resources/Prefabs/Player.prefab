@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 920704349247397488}
   - component: {fileID: 920704349247397495}
   - component: {fileID: 920704349053724222}
-  - component: {fileID: 920704349053724223}
+  - component: {fileID: 331569857}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -124,7 +124,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &920704349053724223
+--- !u!114 &331569857
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,7 +133,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 920704349247397494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 970bef6c56399904c93492b093b9307f, type: 3}
+  m_Script: {fileID: 11500000, guid: bc0b4c7c4894e594998492faf6417310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  jumpForce: 9
+  snapForce: 225

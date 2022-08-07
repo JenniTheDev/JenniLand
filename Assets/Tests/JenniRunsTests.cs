@@ -47,7 +47,7 @@ public class JenniRunsTests
     }
 
     [Test]
-    public void PlayerMovementTest()
+    public void PlayerMovementXAxisTest()
     {
         var startingPosition = player.transform.position.x;
         inputTestFixture.Press(gamepad.leftStick.right);
@@ -59,6 +59,10 @@ public class JenniRunsTests
 
         endingPosition = player.transform.position.x;
         Assert.That(endingPosition, Is.GreaterThan(startingPosition), "Player did not move using keyboard.");
+    }
+
+    public void PlayerMovementJumpTest()
+    {
     }
 
     [Test]
@@ -74,12 +78,6 @@ public class JenniRunsTests
     {
         // Use the Assert class to test conditions.
         // Use yield to skip a frame.
-        yield return null;
-    }
-
-    [UnityTest]
-    public IEnumerator CharacterMovementOnXAxis()
-    {
         yield return null;
     }
 }
