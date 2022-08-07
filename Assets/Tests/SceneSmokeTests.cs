@@ -26,7 +26,6 @@ namespace UnityEditor.TestTools
         {
             logSeverityTracker.Register();
             logSeverityTracker.IgnoredMessages.AddRange(new[] { "Log" });
-            // logSeverityTracker.Register();
             SceneManager.LoadScene(levelToSmoke);
         }
 

@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>8/2/2022 - 7:39:22 PM</Generatedon>
+    <Generatedon>8/6/2022 - 8:35:47 PM</Generatedon>
     <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
-    <Assemblies>2</Assemblies>
-    <Classes>7</Classes>
-    <Files>7</Files>
-    <Coveredlines>50</Coveredlines>
-    <Uncoveredlines>52</Uncoveredlines>
-    <Coverablelines>102</Coverablelines>
-    <Totallines>223</Totallines>
-    <Linecoverage>49</Linecoverage>
+    <Assemblies>1</Assemblies>
+    <Classes>11</Classes>
+    <Files>11</Files>
+    <Coveredlines>87</Coveredlines>
+    <Uncoveredlines>257</Uncoveredlines>
+    <Coverablelines>344</Coverablelines>
+    <Totallines>1408</Totallines>
+    <Linecoverage>25.2</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
   </Summary>
   <Coverage>
-    <Assembly name="Assembly-CSharp" classes="3" coverage="0" coveredlines="0" coverablelines="23" totallines="61" branchcoverage="" coveredbranches="0" totalbranches="0">
-      <Class name="InputWindow" coverage="0" coveredlines="0" coverablelines="4" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="SceneChanger" coverage="0" coveredlines="0" coverablelines="12" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UserData" coverage="0" coveredlines="0" coverablelines="7" totallines="16" branchcoverage="" coveredbranches="0" totalbranches="0" />
-    </Assembly>
-    <Assembly name="Tests" classes="4" coverage="63.2" coveredlines="50" coverablelines="79" totallines="162" branchcoverage="" coveredbranches="0" totalbranches="0">
+    <Assembly name="Tests" classes="11" coverage="25.2" coveredlines="87" coverablelines="344" totallines="1408" branchcoverage="" coveredbranches="0" totalbranches="0">
       <Class name="AllRequiredLevelsProvider" coverage="100" coveredlines="9" coverablelines="9" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="InputWindow" coverage="0" coveredlines="0" coverablelines="5" totallines="12" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="JenniRunsTests" coverage="100" coveredlines="14" coverablelines="14" totallines="46" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="LogSeverityTracker" coverage="38" coveredlines="16" coverablelines="42" totallines="78" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="PlaymodeTests" coverage="0" coveredlines="0" coverablelines="3" totallines="9" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.TestTools.SceneSmokeTests" coverage="100" coveredlines="25" coverablelines="25" totallines="56" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="PlayerController" coverage="40" coveredlines="6" coverablelines="15" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="PlaymodeTests" coverage="100" coveredlines="6" coverablelines="6" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="SceneChanger" coverage="0" coveredlines="0" coverablelines="12" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="UnityEditor.TestTools.SceneSmokeTests" coverage="100" coveredlines="29" coverablelines="29" totallines="55" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="UserData" coverage="100" coveredlines="7" coverablelines="7" totallines="16" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="UserInputs" coverage="0" coveredlines="0" coverablelines="190" totallines="1066" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="UserManager" coverage="0" coveredlines="0" coverablelines="15" totallines="32" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
   </Coverage>
 </CoverageReport>

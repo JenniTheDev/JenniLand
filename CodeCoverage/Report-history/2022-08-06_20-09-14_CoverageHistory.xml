@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2022-08-06_20-09-14" tag="">
+  <assembly name="Tests">
+    <class name="AllRequiredLevelsProvider" coveredlines="9" coverablelines="9" totallines="19" coveredbranches="0" totalbranches="0" />
+    <class name="InputWindow" coveredlines="0" coverablelines="5" totallines="12" coveredbranches="0" totalbranches="0" />
+    <class name="JenniRunsTests" coveredlines="2" coverablelines="12" totallines="41" coveredbranches="0" totalbranches="0" />
+    <class name="LogSeverityTracker" coveredlines="16" coverablelines="42" totallines="78" coveredbranches="0" totalbranches="0" />
+    <class name="PlaymodeTests" coveredlines="5" coverablelines="6" totallines="20" coveredbranches="0" totalbranches="0" />
+    <class name="SceneChanger" coveredlines="0" coverablelines="12" totallines="27" coveredbranches="0" totalbranches="0" />
+    <class name="UnityEditor.TestTools.SceneSmokeTests" coveredlines="25" coverablelines="29" totallines="55" coveredbranches="0" totalbranches="0" />
+    <class name="UserData" coveredlines="7" coverablelines="7" totallines="16" coveredbranches="0" totalbranches="0" />
+    <class name="UserManager" coveredlines="0" coverablelines="15" totallines="32" coveredbranches="0" totalbranches="0" />
+  </assembly>
+</coverage>
