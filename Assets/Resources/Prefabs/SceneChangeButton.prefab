@@ -122,7 +122,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7387224784651565495}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 800015409994836858}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: ChangeToJenniJump
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &800015409994836858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae433b63d37a4ef409133f1ecc3edf13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: 
 --- !u!1 &6403853444155721706
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,7 +213,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Save Name
+  m_text: Jenni Jump
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ffbb72e330d46924892c3a46efc82caa, type: 2}
   m_sharedMaterial: {fileID: -352992666271197210, guid: ffbb72e330d46924892c3a46efc82caa, type: 2}

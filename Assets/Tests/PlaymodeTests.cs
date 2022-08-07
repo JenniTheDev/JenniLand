@@ -19,10 +19,4 @@ public class PlaymodeTests : InputTestFixture
         Assert.That(userData.UserName, Is.EqualTo("TestUser"), "User name is wrong.");
     }
 
-    [Test]
-    public void CanPressButtonOnGamepad()
-    {
-        var gamepad = InputSystem.AddDevice<Gamepad>();
-        Press(gamepad.buttonSouth);
-    }
 }

@@ -19,8 +19,8 @@ public class JenniRunsTests
     [SetUp]
     public void Setup()
     {
-        inputTestFixture.Setup();
         // load my prefabs and stuff here if I need them a lot
+        inputTestFixture.Setup();
         SceneManager.LoadScene("JenniRun");
         player = Resources.Load<GameObject>("Prefabs/Player");
         gamepad = InputSystem.AddDevice<Gamepad>();
@@ -30,11 +30,11 @@ public class JenniRunsTests
     [TearDown]
     public void TearDown()
     {
+        // tear down clean up stuff between tests, set prefabs to null
         player = null;
         gamepad = null;
         keyboard = null;
         inputTestFixture.TearDown();
-        // tear down clean up stuff between tests, set prefabs to null
     }
 
     [Test]
@@ -63,8 +63,9 @@ public class JenniRunsTests
     {
         var startingPosition = player.transform.position.y;
         inputTestFixture.Press(keyboard.spaceKey, 4);
-        yield return new WaitForSeconds(0.5f);
+        // yield return new WaitForSeconds(0.5f);
         var endingPosition = player.transform.position.y;
+        yield return new WaitForSeconds(0.5f);
         Assert.That(endingPosition, Is.GreaterThan(startingPosition), "Player did not jump using keyboard.");
     }
 
@@ -79,17 +80,8 @@ public class JenniRunsTests
     public void SceneHasAllComponents()
     {
         // How do I get the camera object?
-        // Assert.That(Assets)
+        // var camera = Camera.main.enabled;
+        // Assert.That(camera, Is.True, "Camera not found");
         Assert.That(player.gameObject, Is.Not.Null, "Player is missing");
     }
-
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    // [UnityTest]
-    // public IEnumerator JenniRunsTestsWithEnumeratorPasses()
-    // {
-    // Use the Assert class to test conditions.
-    // Use yield to skip a frame.
-    //    yield return null;
-    // }
 }
