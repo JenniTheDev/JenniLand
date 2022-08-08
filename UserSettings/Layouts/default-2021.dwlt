@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Inspector
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -40,9 +40,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 659
-    width: 788
-    height: 288
+    y: 546
+    width: 959
+    height: 401
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
@@ -69,12 +69,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 788
+    width: 959
     height: 947
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 73
+  controlID: 142
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 136
+  controlID: 140
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 137
+  controlID: 141
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -213,8 +213,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 788
-    height: 659
+    width: 959
+    height: 546
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
@@ -223,7 +223,7 @@ MonoBehaviour:
   - {fileID: 20}
   - {fileID: 14}
   m_Selected: 1
-  m_LastSelected: 2
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -241,14 +241,14 @@ MonoBehaviour:
   - {fileID: 13}
   m_Position:
     serializedVersion: 2
-    x: 788
+    x: 959
     y: 0
-    width: 890
+    width: 507
     height: 947
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 138
+  controlID: 280
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -264,12 +264,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1678
+    x: 1466
     y: 0
-    width: 242
+    width: 454
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -285,24 +285,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: SceneHierarchyWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 890
+    width: 507
     height: 571
-  m_MinSize: {x: 102, y: 121}
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
   - {fileID: 16}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -320,7 +320,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 571
-    width: 890
+    width: 507
     height: 376
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
@@ -751,7 +751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5115ff20f1ea204dac14fa49c0e8f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 445, y: 490}
+  m_MinSize: {x: 445, y: 385}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Code Coverage
@@ -759,9 +759,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 788
+    x: 859
     y: 73
-    width: 888
+    width: 504
     height: 550
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -787,16 +787,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 788
+    x: 959
     y: 73
-    width: 888
+    width: 505
     height: 550
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 502
+    ID: 166
     splitterInitialOffset: 465
     currentActiveSplitter: -1
     realSizes:
@@ -828,7 +828,7 @@ MonoBehaviour:
       name: TestLand
       fullName: TestLand
       resultStatus: 2
-      duration: 316.7447
+      duration: 23.85506
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -839,12 +839,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1029
-      uniqueId: '[Tests][C:/Users/justl/Documents/DevStuff/TestLand/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1030
+      uniqueId: '[Tests][F:/TestLand/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
-      fullName: C:/Users/justl/Documents/DevStuff/TestLand/Library/ScriptAssemblies/Tests.dll
+      fullName: F:/TestLand/Library/ScriptAssemblies/Tests.dll
       resultStatus: 2
-      duration: 316.4641
+      duration: 23.648264
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -860,7 +860,7 @@ MonoBehaviour:
       name: JenniMenuTests
       fullName: JenniMenuTests
       resultStatus: 2
-      duration: 316.43967
+      duration: 0.6395067
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -871,15 +871,72 @@ MonoBehaviour:
       categories: []
       parentId: 1029
       parentUniqueId: '[Tests][C:/Users/justl/Documents/DevStuff/TestLand/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1002
+    - id: 1005
+      uniqueId: Tests.dll/JenniMenuTests/[Tests][JenniMenuTests.CheckForJenniJumpButtonTest]
+      name: CheckForJenniJumpButtonTest
+      fullName: JenniMenuTests.CheckForJenniJumpButtonTest
+      resultStatus: 2
+      duration: 0.2383472
+      messages: "  JenniJump button did not open JenniJump scene.\r\n  String lengths
+        are both 9. Strings differ at index 5.\r\n  Expected: \"JenniMenu\"\r\n 
+        But was:  \"JenniJump\"\r\n  ----------------^\r\n"
+      output: 
+      stacktrace: 'at JenniMenuTests+<CheckForJenniJumpButtonTest>d__8.MoveNext ()
+        [0x000dd] in F:\TestLand\Assets\Tests\JenniMenuTests.cs:96
+
+        at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext
+        () [0x0004e] in F:\TestLand\Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][JenniMenuTests][suite]
+    - id: 1004
+      uniqueId: Tests.dll/JenniMenuTests/[Tests][JenniMenuTests.CheckForJenniRunButtonTest]
+      name: CheckForJenniRunButtonTest
+      fullName: JenniMenuTests.CheckForJenniRunButtonTest
+      resultStatus: 2
+      duration: 0.0850425
+      messages: "  JenniRun button did not open JenniRun scene.\r\n  Expected string
+        length 9 but was 8. Strings differ at index 5.\r\n  Expected: \"JenniMenu\"\r\n 
+        But was:  \"JenniRun\"\r\n  ----------------^\r\n"
+      output: 
+      stacktrace: 'at JenniMenuTests+<CheckForJenniRunButtonTest>d__7.MoveNext ()
+        [0x000dd] in F:\TestLand\Assets\Tests\JenniMenuTests.cs:78
+
+        at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext
+        () [0x0004e] in F:\TestLand\Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][JenniMenuTests][suite]
+    - id: 1003
       uniqueId: Tests.dll/JenniMenuTests/[Tests][JenniMenuTests.CheckForJenniSaysButtonTest]
       name: CheckForJenniSaysButtonTest
       fullName: JenniMenuTests.CheckForJenniSaysButtonTest
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 2
+      duration: 0.0945581
+      messages: "  JenniSays button did not open JenniSays scene.\r\n  Expected:
+        null\r\n  But was:  \"JenniSays\"\r\n"
       output: 
-      stacktrace: 
+      stacktrace: 'at JenniMenuTests+<CheckForJenniSaysButtonTest>d__6.MoveNext ()
+        [0x000e6] in F:\TestLand\Assets\Tests\JenniMenuTests.cs:60
+
+        at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext
+        () [0x0004e] in F:\TestLand\Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -888,12 +945,31 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/[Tests][JenniMenuTests][suite]
-    - id: 1003
+    - id: 1004
       uniqueId: Tests.dll/JenniMenuTests/[Tests][JenniMenuTests.CheckForJenniSaysSceneObjects]
       name: CheckForJenniSaysSceneObjects
       fullName: JenniMenuTests.CheckForJenniSaysSceneObjects
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0226516
+      messages: 
+      output: 'Object Count: 17
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][JenniMenuTests][suite]
+    - id: 1002
+      uniqueId: Tests.dll/JenniMenuTests/[Tests][JenniMenuTests.CheckForUiCanvasTest]
+      name: CheckForUiCanvasTest
+      fullName: JenniMenuTests.CheckForUiCanvasTest
+      resultStatus: 1
+      duration: 0.0980356
       messages: 
       output: 
       stacktrace: 
@@ -905,14 +981,19 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/[Tests][JenniMenuTests][suite]
-    - id: 1003
-      uniqueId: Tests.dll/JenniMenuTests/[Tests][JenniMenuTests.CheckIfSceneIsLoading]
-      name: CheckIfSceneIsLoading
-      fullName: JenniMenuTests.CheckIfSceneIsLoading
+    - id: 1007
+      uniqueId: Tests.dll/JenniMenuTests/[Tests][JenniMenuTests.TestSceneChangeToMainMenu]
+      name: TestSceneChangeToMainMenu
+      fullName: JenniMenuTests.TestSceneChangeToMainMenu
       resultStatus: 1
-      duration: 11.807624
+      duration: 0.0810186
       messages: 
-      output: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -927,7 +1008,7 @@ MonoBehaviour:
       name: JenniRunsTests
       fullName: JenniRunsTests
       resultStatus: 2
-      duration: 1.3993994
+      duration: 2.7233202
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -938,12 +1019,31 @@ MonoBehaviour:
       categories: []
       parentId: 1024
       parentUniqueId: '[Tests][F:/TestLand/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1007
+      uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.CheckForJenniRunsSceneObjects]
+      name: CheckForJenniRunsSceneObjects
+      fullName: JenniRunsTests.CheckForJenniRunsSceneObjects
+      resultStatus: 1
+      duration: 0.0153323
+      messages: 
+      output: 'Object Count: 17
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
     - id: 1008
       uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.CheckMaxFallVeloctyTest]
       name: CheckMaxFallVeloctyTest
       fullName: JenniRunsTests.CheckMaxFallVeloctyTest
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 1.0588154
       messages: 
       output: 
       stacktrace: 
@@ -960,16 +1060,15 @@ MonoBehaviour:
       name: PlayerGamePadJumpTest
       fullName: JenniRunsTests.PlayerGamePadJumpTest
       resultStatus: 2
-      duration: 1.3699868
+      duration: 1.0492942
       messages: "  Player did not jump using gamepad.\r\n  Expected: not equal to
         -2.0f\r\n  But was:  -2.0f\r\n"
       output: 
-      stacktrace: 'at JenniRunsTests+<PlayerGamePadJumpTest>d__7.MoveNext () [0x000b4]
-        in C:\Users\justl\Documents\DevStuff\TestLand\Assets\Tests\JenniRunsTests.cs:58
+      stacktrace: 'at JenniRunsTests+<PlayerGamePadJumpTest>d__8.MoveNext () [0x000b4]
+        in F:\TestLand\Assets\Tests\JenniRunsTests.cs:60
 
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
-        in C:\Users\justl\Documents\DevStuff\TestLand\Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+        at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext
+        () [0x0004e] in F:\TestLand\Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
 
 '
       notRunnable: 0
@@ -985,7 +1084,7 @@ MonoBehaviour:
       name: PlayerHasAllPartsTest
       fullName: JenniRunsTests.PlayerHasAllPartsTest
       resultStatus: 1
-      duration: 0.1070246
+      duration: 0.0143604
       messages: 
       output: 
       stacktrace: 
@@ -1002,16 +1101,15 @@ MonoBehaviour:
       name: PlayerKeyboardJumpTest
       fullName: JenniRunsTests.PlayerKeyboardJumpTest
       resultStatus: 2
-      duration: 0.7733191
+      duration: 0.5529387
       messages: "  Player did not jump using keyboard.\r\n  Expected: greater than
         -2.0f\r\n  But was:  -2.0f\r\n"
       output: 
-      stacktrace: 'at JenniRunsTests+<PlayerKeyboardJumpTest>d__8.MoveNext () [0x000b7]
-        in C:\Users\justl\Documents\DevStuff\TestLand\Assets\Tests\JenniRunsTests.cs:69
+      stacktrace: 'at JenniRunsTests+<PlayerKeyboardJumpTest>d__9.MoveNext () [0x000b7]
+        in F:\TestLand\Assets\Tests\JenniRunsTests.cs:70
 
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
-        in C:\Users\justl\Documents\DevStuff\TestLand\Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+        at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext
+        () [0x0004e] in F:\TestLand\Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
 
 '
       notRunnable: 0
@@ -1027,10 +1125,11 @@ MonoBehaviour:
       name: SceneHasAllComponents
       fullName: JenniRunsTests.SceneHasAllComponents
       resultStatus: 2
-      duration: 0.151802
-      messages: "  Camera not found\r\n  Expected: True\r\n  But was:  null\r\n"
+      duration: 0.0155087
+      messages: "  Camera not found\r\n  Expected: True\r\n  But was:  <Main Camera
+        (UnityEngine.GameObject)>\r\n"
       output: 
-      stacktrace: 'at JenniRunsTests.SceneHasAllComponents () [0x0000c] in C:\Users\justl\Documents\DevStuff\TestLand\Assets\Tests\JenniRunsTests.cs:84
+      stacktrace: 'at JenniRunsTests.SceneHasAllComponents () [0x0000c] in F:\TestLand\Assets\Tests\JenniRunsTests.cs:85
 
 '
       notRunnable: 0
@@ -1046,7 +1145,7 @@ MonoBehaviour:
       name: PlaymodeTests
       fullName: PlaymodeTests
       resultStatus: 1
-      duration: 0.126255
+      duration: 0.0337653
       messages: 
       output: 
       stacktrace: 
@@ -1062,7 +1161,7 @@ MonoBehaviour:
       name: UserDataTest
       fullName: PlaymodeTests.UserDataTest
       resultStatus: 1
-      duration: 0.0057163
+      duration: 0.0012801
       messages: 
       output: 
       stacktrace: 
@@ -1079,7 +1178,7 @@ MonoBehaviour:
       name: UnityEditor
       fullName: UnityEditor
       resultStatus: 1
-      duration: 20.485252
+      duration: 20.24488
       messages: 
       output: 
       stacktrace: 
@@ -1095,7 +1194,7 @@ MonoBehaviour:
       name: TestTools
       fullName: UnityEditor.TestTools
       resultStatus: 1
-      duration: 20.468962
+      duration: 20.229685
       messages: 
       output: 
       stacktrace: 
@@ -1111,7 +1210,7 @@ MonoBehaviour:
       name: SceneSmokeTests
       fullName: UnityEditor.TestTools.SceneSmokeTests
       resultStatus: 1
-      duration: 20.466303
+      duration: 20.227165
       messages: 
       output: 
       stacktrace: 
@@ -1127,7 +1226,7 @@ MonoBehaviour:
       name: SceneSmokeTests("Assets/Scenes/JenniJump.unity")
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniJump.unity")
       resultStatus: 1
-      duration: 5.209142
+      duration: 5.051623
       messages: 
       output: 
       stacktrace: 
@@ -1143,7 +1242,7 @@ MonoBehaviour:
       name: LoadsClean
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniJump.unity").LoadsClean
       resultStatus: 1
-      duration: 0.001586
+      duration: 0.0012588
       messages: 
       output: 
       stacktrace: 
@@ -1160,7 +1259,7 @@ MonoBehaviour:
       name: RunsClean
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniJump.unity").RunsClean
       resultStatus: 1
-      duration: 5.136532
+      duration: 5.017604
       messages: 
       output: 
       stacktrace: 
@@ -1177,7 +1276,7 @@ MonoBehaviour:
       name: UnloadsClean
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniJump.unity").UnloadsClean
       resultStatus: 1
-      duration: 0.0606491
+      duration: 0.0279016
       messages: 
       output: 
       stacktrace: 
@@ -1194,7 +1293,7 @@ MonoBehaviour:
       name: SceneSmokeTests("Assets/Scenes/JenniMenu.unity")
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniMenu.unity")
       resultStatus: 1
-      duration: 5.093591
+      duration: 5.054359
       messages: 
       output: 
       stacktrace: 
@@ -1210,7 +1309,7 @@ MonoBehaviour:
       name: LoadsClean
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniMenu.unity").LoadsClean
       resultStatus: 1
-      duration: 0.0002363
+      duration: 0.0001524
       messages: 
       output: 
       stacktrace: 
@@ -1227,7 +1326,7 @@ MonoBehaviour:
       name: RunsClean
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniMenu.unity").RunsClean
       resultStatus: 1
-      duration: 5.0258555
+      duration: 5.0151505
       messages: 
       output: 
       stacktrace: 
@@ -1244,7 +1343,7 @@ MonoBehaviour:
       name: UnloadsClean
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniMenu.unity").UnloadsClean
       resultStatus: 1
-      duration: 0.0271171
+      duration: 0.0213621
       messages: 
       output: 
       stacktrace: 
@@ -1261,7 +1360,7 @@ MonoBehaviour:
       name: SceneSmokeTests("Assets/Scenes/JenniRun.unity")
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniRun.unity")
       resultStatus: 1
-      duration: 5.0798125
+      duration: 5.060141
       messages: 
       output: 
       stacktrace: 
@@ -1277,7 +1376,7 @@ MonoBehaviour:
       name: LoadsClean
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniRun.unity").LoadsClean
       resultStatus: 1
-      duration: 0.0002176
+      duration: 0.0001435
       messages: 
       output: 
       stacktrace: 
@@ -1294,7 +1393,7 @@ MonoBehaviour:
       name: RunsClean
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniRun.unity").RunsClean
       resultStatus: 1
-      duration: 5.020588
+      duration: 5.0155993
       messages: 
       output: 
       stacktrace: 
@@ -1311,7 +1410,7 @@ MonoBehaviour:
       name: UnloadsClean
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniRun.unity").UnloadsClean
       resultStatus: 1
-      duration: 0.0389326
+      duration: 0.0270805
       messages: 
       output: 
       stacktrace: 
@@ -1328,7 +1427,7 @@ MonoBehaviour:
       name: SceneSmokeTests("Assets/Scenes/JenniSays.unity")
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniSays.unity")
       resultStatus: 1
-      duration: 5.0802627
+      duration: 5.0579715
       messages: 
       output: 
       stacktrace: 
@@ -1344,7 +1443,7 @@ MonoBehaviour:
       name: LoadsClean
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniSays.unity").LoadsClean
       resultStatus: 1
-      duration: 0.0002233
+      duration: 0.0001529
       messages: 
       output: 
       stacktrace: 
@@ -1361,7 +1460,7 @@ MonoBehaviour:
       name: RunsClean
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniSays.unity").RunsClean
       resultStatus: 1
-      duration: 5.023385
+      duration: 5.013285
       messages: 
       output: 
       stacktrace: 
@@ -1378,7 +1477,7 @@ MonoBehaviour:
       name: UnloadsClean
       fullName: UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniSays.unity").UnloadsClean
       resultStatus: 1
-      duration: 0.0365436
+      duration: 0.0269014
       messages: 
       output: 
       stacktrace: 
@@ -1390,13 +1489,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1015
       parentUniqueId: Tests.dll/UnityEditor/TestTools/SceneSmokeTests/[Tests][UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniSays.unity")][suite]
-    - id: 1037
-      uniqueId: '[Unity.InputSystem.IntegrationTests][C:/Users/justl/Documents/DevStuff/TestLand/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll][suite]'
+    - id: 1038
+      uniqueId: '[Unity.InputSystem.IntegrationTests][F:/TestLand/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll][suite]'
       name: Unity.InputSystem.IntegrationTests.dll
-      fullName: C:/Users/justl/Documents/DevStuff/TestLand/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
-      resultStatus: 0
-      duration: 0
-      messages: 
+      fullName: F:/TestLand/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
+      resultStatus: 4
+      duration: 0.0339668
+      messages: One or more child tests were ignored
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1410,9 +1509,9 @@ MonoBehaviour:
       uniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
       name: IntegrationTests
       fullName: IntegrationTests
-      resultStatus: 0
-      duration: 0
-      messages: 
+      resultStatus: 4
+      duration: 0.017524
+      messages: One or more child tests were ignored
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1426,8 +1525,8 @@ MonoBehaviour:
       uniqueId: Unity.InputSystem.IntegrationTests.dll/IntegrationTests/[Unity.InputSystem.IntegrationTests][IntegrationTests.Integration_CanChangeInputBackendPlayerSettingInEditor]
       name: Integration_CanChangeInputBackendPlayerSettingInEditor
       fullName: IntegrationTests.Integration_CanChangeInputBackendPlayerSettingInEditor
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0039103
       messages: 
       output: 
       stacktrace: 
@@ -1443,8 +1542,8 @@ MonoBehaviour:
       uniqueId: Unity.InputSystem.IntegrationTests.dll/IntegrationTests/[Unity.InputSystem.IntegrationTests][IntegrationTests.Integration_CanSendAndReceiveEvents]
       name: Integration_CanSendAndReceiveEvents
       fullName: IntegrationTests.Integration_CanSendAndReceiveEvents
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0097499
       messages: 
       output: 
       stacktrace: 
@@ -1456,7 +1555,7 @@ MonoBehaviour:
       - Integration
       parentId: 1029
       parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
-    - id: 1037
+    - id: 1041
       uniqueId: Unity.InputSystem.IntegrationTests.dll/IntegrationTests/[Unity.InputSystem.IntegrationTests][IntegrationTests.WindowsInput_MouseMovements_AreDetected]
       name: WindowsInput_MouseMovements_AreDetected
       fullName: IntegrationTests.WindowsInput_MouseMovements_AreDetected
@@ -1471,9 +1570,9 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Integration
-      parentId: 1033
+      parentId: 1037
       parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
-    - id: 1036
+    - id: 1040
       uniqueId: Unity.InputSystem.IntegrationTests.dll/IntegrationTests/[Unity.InputSystem.IntegrationTests][IntegrationTests.WindowsInput_RemoteDesktopMouseMovements_AreDetected]
       name: WindowsInput_RemoteDesktopMouseMovements_AreDetected
       fullName: IntegrationTests.WindowsInput_RemoteDesktopMouseMovements_AreDetected
@@ -1488,15 +1587,20 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Integration
-      parentId: 1033
+      parentId: 1037
       parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
-    m_ResultText: 
+    m_ResultText: 'TestLand (23.855s)
+
+      ---
+
+      One or more child tests had
+      errors'
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0a9771e3
-      m_LastClickedID: -479095030
-      m_ExpandedIDs: 11de799737b885b5fb42c6b558a208b61a55f0bbb33467bcd99807cefd54e5cee3fbebd07d5073d7e557abf7a62d080b67e3301ba1c6d42ff0ab05440664c953ffffff7f
+      m_SelectedIDs: 37b885b5
+      m_LastClickedID: -1249527753
+      m_ExpandedIDs: 11de799737b885b5fb42c6b558a208b61a55f0bbb33467bcd99807cefd54e5ce7d5073d7e557abf7a62d080b67e3301ba1c6d42ff0ab05440664c953ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1596,9 +1700,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 732
-    width: 787
-    height: 267
+    y: 619
+    width: 958
+    height: 380
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1623,9 +1727,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1678
+    x: 1466
     y: 73
-    width: 241
+    width: 453
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1664,9 +1768,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 788
+    x: 959
     y: 644
-    width: 888
+    width: 505
     height: 355
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1685,22 +1789,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Prefabs
+    - Assets/ScriptableObjects
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Resources/Prefabs
+  - Assets/ScriptableObjects
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: C:\Users\justl\Documents\DevStuff\TestLand
+  m_LastProjectPath: F:\TestLand
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6c690000
-    m_LastClickedID: 26988
-    m_ExpandedIDs: 00000000e8680000ee68000000ca9a3b
+    m_SelectedIDs: 404f0000
+    m_LastClickedID: 20288
+    m_ExpandedIDs: 000000002a4f00002c4f00002e4f0000304f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1728,7 +1832,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000002a4f00002c4f00002e4f0000304f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1755,22 +1859,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: WaitForSceneLoaded
-      m_OriginalName: WaitForSceneLoaded
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 30942
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 13}
     m_CreateAssetUtility:
@@ -1783,7 +1887,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 196
+  m_DirectoriesAreaWidth: 208
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1806,8 +1910,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 787
-    height: 638
+    width: 958
+    height: 525
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1854,23 +1958,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 787
-      height: 617
-    m_Scale: {x: 0.40989584, y: 0.40989584}
-    m_Translation: {x: 393.5, y: 308.5}
+      width: 958
+      height: 504
+    m_Scale: {x: 0.46666667, y: 0.46666667}
+    m_Translation: {x: 479, y: 252}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -960
-      y: -752.63025
-      width: 1920
-      height: 1505.2605
+      x: -1026.4286
+      y: -540
+      width: 2052.8572
+      height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 0.40989584
-  m_LastWindowPixelSize: {x: 787, y: 638}
+  m_defaultScale: 0.46666667
+  m_LastWindowPixelSize: {x: 958, y: 525}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1896,10 +2000,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 81
-    width: 845
-    height: 628
+    x: 0
+    y: 73
+    width: 958
+    height: 525
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1910,7 +2014,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -101, y: -26}
+      snapOffsetDelta: {x: -101, y: -1}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -1932,7 +2036,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: unity-scene-view-toolbar
       index: 0
@@ -1943,7 +2047,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 1
       id: unity-search-toolbar
       index: 1
@@ -1954,7 +2058,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: Scene View/Open Tile Palette
       index: 2
@@ -1965,7 +2069,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: Scene View/Tilemap Focus
       index: 3
@@ -1976,7 +2080,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: unity-transform-toolbar
       index: 0
@@ -1998,7 +2102,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: Scene View/Light Settings
       index: 0
@@ -2009,7 +2113,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: Scene View/Camera
       index: 1
@@ -2020,7 +2124,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: Scene View/Cloth Constraints
       index: 2
@@ -2031,7 +2135,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: Scene View/Cloth Collisions
       index: 3
@@ -2042,7 +2146,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: Scene View/Navmesh Display
       index: 4
@@ -2053,7 +2157,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: Scene View/Agent Display
       index: 5
@@ -2064,7 +2168,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: Scene View/Obstacle Display
       index: 6
@@ -2075,7 +2179,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: Scene View/Occlusion Culling
       index: 7
@@ -2086,7 +2190,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: Scene View/Physics Debugger
       index: 8
@@ -2097,7 +2201,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: Scene View/Scene Visibility
       index: 9
@@ -2108,7 +2212,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 25}
       snapCorner: 0
       id: Scene View/Particles
       index: 10
@@ -2123,9 +2227,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.6446526, y: 2.7724504, z: -0.073244646}
+    m_Target: {x: 278.40247, y: 406.06128, z: -8.8578415}
     speed: 2
-    m_Value: {x: 2.6446526, y: 2.7724504, z: -0.073244646}
+    m_Value: {x: 278.40247, y: 406.06128, z: -8.8578415}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2176,9 +2280,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.038612
+    m_Target: 716.2134
     speed: 2
-    m_Value: 8.038612
+    m_Value: 716.2134
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -2223,9 +2327,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 788
+    x: 959
     y: 73
-    width: 888
+    width: 505
     height: 550
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -2234,23 +2338,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: de7fffff1680fffff081ffff6483ffff9c83ffffbc84ffff3286ffff6a86ffffa687ffffee88ffff2689fffffe8affffa88dffffe08dffff208fffffec8fffff2490ffff6491ffff3092ffff6892ffffa893ffff7494ffffac94ffff8496ffff5897ffff9097ffff6699ffffde9affff169bffff549cffff089effff409effff16a0ffff00a2ffff38a2ffff06a4ffffc4a7fffffca7ffffcaa9ffff36abffff6eabffff3eadffff1eaeffff56aeffff24b0ffff92b1ffffcab1ffff98b3ffff3cb6ffff3eb6ffff76b6ffff46b8ffff1ebaffff56baffffe6bbffff28bdffff60bdfffff0beffffb4c3ffffecc3ffff78c5ffff0ec8ffff46c8ffffd4c9ffffe0cbffffe4cfffff1cd0ffff5ad1ffff38d2ffff70d2ffffaed3ffffc4d4fffffcd4ffff3ad6ffff1ed7ffff56d7ffff94d8ffff4ad9ffff82d9ffffc4daffff0cddfffffeddffff16770000b2790000
+      m_SelectedIDs: aeaeffff
+      m_LastClickedID: -20818
+      m_ExpandedIDs: aeaeffffc0aeffffd2aeffff0aafffff68b8ffff2cddffff36ddffff48ddffff5addffff92ddffffcae8ffff9ce9ffffd4e9ffff0cf5ffffdef5ffff16f6ffffb6f8ffff14fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: SaveButton
+        m_OriginalName: SaveButton
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -8940
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 12}
       m_SearchString: 

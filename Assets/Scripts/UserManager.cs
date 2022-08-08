@@ -7,8 +7,7 @@ using UnityEngine.UI;
 public class UserManager : ScriptableObject
 {
     [SerializeField] private UserData userData;
-    private int upperIdLimit = 9999;
-    private List<int> usedIds;
+    [SerializeField] private string userName;
 
     public void Awake()
     {
@@ -18,15 +17,6 @@ public class UserManager : ScriptableObject
     public void UpdateUserName(string text)
     {
         userData.UserName = text;
-    }
-
-    public void CreateId()
-    {
-        userData.Id = Random.Range(0, upperIdLimit);
-        if (usedIds.Contains(userData.Id))
-        {
-            userData.Id = Random.Range(0, upperIdLimit);
-        }
-        usedIds.Add(userData.Id);
+        userName = userData.UserName;
     }
 }

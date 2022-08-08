@@ -1,12 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InputWindow : MonoBehaviour
 {
-    [SerializeField] private InputWindow inputWindow;
+    [SerializeField] private UserManager userManager;
+    [SerializeField] private string textInput;
 
-    public void SaveUserName()
+    public void SaveUserName(string input)
     {
+        // var name = this.GetComponent<InputField>().;
+        userManager.UpdateUserName(input);
+        textInput = input;
     }
 }

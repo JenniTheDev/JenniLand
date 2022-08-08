@@ -244,6 +244,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4445200669878208626, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeToJenniSays
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445200669878208626, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneChanger, Tests
+      objectReference: {fileID: 0}
+    - target: {fileID: 4778048348252295665, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+      propertyPath: m_text
+      value: Jenni Says
+      objectReference: {fileID: 0}
     - target: {fileID: 7979717763597872768, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -332,5 +344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7979717764962718023, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 271173671009412228, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}

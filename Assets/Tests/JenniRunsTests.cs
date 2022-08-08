@@ -1,11 +1,7 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Utilities;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 
@@ -19,7 +15,6 @@ public class JenniRunsTests
     [SetUp]
     public void Setup()
     {
-        // load my prefabs and stuff here if I need them a lot
         inputTestFixture.Setup();
         SceneManager.LoadScene("JenniRun");
         player = Resources.Load<GameObject>("Prefabs/Player");
@@ -30,11 +25,18 @@ public class JenniRunsTests
     [TearDown]
     public void TearDown()
     {
-        // tear down clean up stuff between tests, set prefabs to null
         player = null;
         gamepad = null;
         keyboard = null;
         inputTestFixture.TearDown();
+    }
+
+    [Test]
+    public void CheckForJenniRunsSceneObjects()
+    {
+        AssertSceneLoaded("JenniRuns");
+        var allObjects = Object.FindObjectsOfType<MonoBehaviour>();
+        Debug.Log($"Object Count: {allObjects.Length}");
     }
 
     [Test]
@@ -63,7 +65,6 @@ public class JenniRunsTests
     {
         var startingPosition = player.transform.position.y;
         inputTestFixture.Press(keyboard.spaceKey, 4);
-        // yield return new WaitForSeconds(0.5f);
         var endingPosition = player.transform.position.y;
         yield return new WaitForSeconds(0.5f);
         Assert.That(endingPosition, Is.GreaterThan(startingPosition), "Player did not jump using keyboard.");
@@ -73,7 +74,7 @@ public class JenniRunsTests
     public IEnumerator CheckMaxFallVeloctyTest()
     {
         // jump a lot ?
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(1f);
     }
 
     [Test]
@@ -83,5 +84,13 @@ public class JenniRunsTests
         var camera = GameObject.Find("Main Camera"); // is not found
         Assert.That(camera, Is.True, "Camera not found");
         Assert.That(player.gameObject, Is.Not.Null, "Player is missing");
+    }
+
+    // This needs to be moved to a helper class
+    public static IEnumerator AssertSceneLoaded(string sceneName)
+    {
+        var waitForScene = new WaitForSceneLoaded(sceneName);
+        yield return waitForScene;
+        Assert.IsFalse(waitForScene.TimedOut, "Scene " + sceneName + " was never loaded");
     }
 }

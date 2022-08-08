@@ -9,6 +9,10 @@ public class LogSeverityTracker
 {
     public readonly List<string> IgnoredMessages = new List<string>();
 
+    private string strongestLog;
+    private int strongestLogSeverity = 0;
+    private LogType strongestLogType = LogType.Log;
+
     public void Register()
     {
         Application.logMessageReceived -= KeepSeverestMessage;
@@ -32,14 +36,6 @@ public class LogSeverityTracker
         Assert.That(strongestLogType, Is.EqualTo(LogType.Log), prefix + $"found severe {strongestLogType}:\n{strongestLog}");
     }
 
-    // -------------------------------------------------- private state
-
-    private string strongestLog;
-    private int strongestLogSeverity = 0;
-    private LogType strongestLogType = LogType.Log;
-
-    // -------------------------------------------------- private logic
-
     private void KeepSeverestMessage(string logString, string stackTrace, LogType type)
     {
         bool isIgnored = IgnoredMessages.Any(msg => logString.Contains(msg));
@@ -58,7 +54,7 @@ public class LogSeverityTracker
     }
 
     /// <summary>
-    ///   annoyingly the LogType enum does not have semantic ordering! so let's work out our own.
+    ///   Annoyingly the LogType enum does not have semantic ordering! so let's work out our own.
     ///   higher numbers mean more severe.
     /// </summary>
     private int ScoreSeverityOf(LogType log)
