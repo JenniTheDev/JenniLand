@@ -12,12 +12,13 @@ public class JenniRunsTests
     private Keyboard keyboard;
     private InputTestFixture inputTestFixture = new();
 
-    [SetUp]
-    public void Setup()
+    [UnitySetUp]
+    public IEnumerator Setup()
     {
         inputTestFixture.Setup();
         SceneManager.LoadScene("JenniRun");
-        player = Resources.Load<GameObject>("Prefabs/Player");
+        yield return new WaitForSeconds(2.0f);
+        player = GameObject.FindGameObjectWithTag("Player");
         gamepad = InputSystem.AddDevice<Gamepad>();
         keyboard = InputSystem.AddDevice<Keyboard>();
     }
@@ -40,6 +41,14 @@ public class JenniRunsTests
     }
 
     [Test]
+    public void CheckNumberOfPlayers()
+    {
+        var playerList = GameObject.FindGameObjectsWithTag("Player");
+        // any number but one player
+        Assert.AreEqual(1, playerList.Length, "More then one player.");
+    }
+
+    [Test]
     public void PlayerHasAllPartsTest()
     {
         Assert.That(player, Is.Not.Null, "Player prefab is not found");
@@ -51,23 +60,30 @@ public class JenniRunsTests
     [UnityTest]
     public IEnumerator PlayerGamePadJumpTest()
     {
-        var startingPosition = player.transform.position.y;
+        float jumpThreshhold = 0.1f;
+        // Make sure you get the instance of the player, not a whole new player
+        var playerInstance = GameObject.Find("Player");
+        float startingPosition = playerInstance.transform.position.y;
         inputTestFixture.Press(gamepad.buttonSouth, 4);
         yield return new WaitForSeconds(1f);
-        // I think the ending position is getting the transform at the wrong time
-        var endingPosition = player.transform.position.y;
-        // The positions are always the same
-        Assert.That(endingPosition, Is.Not.EqualTo(startingPosition), "Player did not jump using gamepad.");
+        float endingPosition = playerInstance.transform.position.y;
+        var jumpDistance = Mathf.Abs(endingPosition - startingPosition);
+
+        Assert.IsFalse(jumpDistance < jumpThreshhold, "Player did not jump using gamepad.");
     }
 
     [UnityTest]
     public IEnumerator PlayerKeyboardJumpTest()
     {
-        var startingPosition = player.transform.position.y;
+        float jumpThreshhold = 0.1f;
+        var playerInstance = GameObject.Find("Player");
+        var startingPosition = playerInstance.transform.position.y;
         inputTestFixture.Press(keyboard.spaceKey, 4);
-        var endingPosition = player.transform.position.y;
-        yield return new WaitForSeconds(0.5f);
-        Assert.That(endingPosition, Is.GreaterThan(startingPosition), "Player did not jump using keyboard.");
+        yield return new WaitForSeconds(1f);
+        float endingPosition = playerInstance.transform.position.y;
+        var jumpDistance = Mathf.Abs(endingPosition - startingPosition);
+
+        Assert.IsFalse(jumpDistance < jumpThreshhold, "Player did not jump using keyboard.");
     }
 
     [UnityTest]
