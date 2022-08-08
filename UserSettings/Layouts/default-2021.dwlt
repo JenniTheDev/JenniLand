@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 8
-    y: 51
-    width: 1904
-    height: 981
+    x: 0
+    y: 43
+    width: 1920
+    height: 997
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Game
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -40,11 +40,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 649
-    width: 846
-    height: 282
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+    y: 659
+    width: 788
+    height: 288
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -69,12 +69,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 846
-    height: 931
+    width: 788
+    height: 947
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 67
+  controlID: 73
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,12 +93,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1904
-    height: 931
+    width: 1920
+    height: 947
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 103
+  controlID: 136
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -119,8 +119,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1904
-    height: 981
+    width: 1920
+    height: 997
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -144,7 +144,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1904
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -169,12 +169,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1904
-    height: 931
+    width: 1920
+    height: 947
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 104
+  controlID: 137
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,8 +191,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 961
-    width: 1904
+    y: 977
+    width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -206,24 +206,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InputActionEditorWindow
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 846
-    height: 649
-  m_MinSize: {x: 600, y: 300}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
+    width: 788
+    height: 659
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 21}
   - {fileID: 20}
   - {fileID: 14}
-  m_Selected: 2
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -241,14 +241,14 @@ MonoBehaviour:
   - {fileID: 13}
   m_Position:
     serializedVersion: 2
-    x: 846
+    x: 788
     y: 0
-    width: 579
-    height: 931
+    width: 890
+    height: 947
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 386
+  controlID: 138
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -264,12 +264,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1425
+    x: 1678
     y: 0
-    width: 479
-    height: 931
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 242
+    height: 947
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -285,24 +285,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneHierarchyWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 579
-    height: 561
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 22}
+    width: 890
+    height: 571
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 22}
   - {fileID: 16}
   - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -319,9 +319,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 561
-    width: 579
-    height: 370
+    y: 571
+    width: 890
+    height: 376
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 19}
@@ -349,10 +349,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 81
-    width: 845
-    height: 628
+    x: 0
+    y: 73
+    width: 853
+    height: 638
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -411,71 +411,13 @@ MonoBehaviour:
     m_AssetGUID: b9577da9306983c4bb5959688e69f5d8
     m_ImportedAssetJson: "{\n    \"name\": \"UserInputs\",\n    \"maps\": [\n       
       {\n            \"name\": \"Player\",\n            \"id\": \"0fd6594c-35d4-4eef-828f-1bc0255b2f2f\",\n           
-      \"actions\": [\n                {\n                    \"name\": \"Move\",\n                   
-      \"type\": \"Value\",\n                    \"id\": \"934d6835-c36d-4220-bbbb-ccc28101667b\",\n                   
-      \"expectedControlType\": \"Vector2\",\n                    \"processors\":
-      \"\",\n                    \"interactions\": \"\",\n                    \"initialStateCheck\":
-      true\n                },\n                {\n                    \"name\":
-      \"Jump\",\n                    \"type\": \"Button\",\n                    \"id\":
-      \"7bbf7a1d-0b87-4804-8af0-d074334547ba\",\n                    \"expectedControlType\":
-      \"Button\",\n                    \"processors\": \"\",\n                   
+      \"actions\": [\n                {\n                    \"name\": \"Jump\",\n                   
+      \"type\": \"Button\",\n                    \"id\": \"7bbf7a1d-0b87-4804-8af0-d074334547ba\",\n                   
+      \"expectedControlType\": \"Button\",\n                    \"processors\": \"\",\n                   
       \"interactions\": \"\",\n                    \"initialStateCheck\": false\n               
       }\n            ],\n            \"bindings\": [\n                {\n                   
-      \"name\": \"\",\n                    \"id\": \"978bfe49-cc26-4a3d-ab7b-7d7a29327403\",\n                   
-      \"path\": \"<Gamepad>/leftStick\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \";Gamepad\",\n                   
-      \"action\": \"Move\",\n                    \"isComposite\": false,\n                   
-      \"isPartOfComposite\": false\n                },\n                {\n                   
-      \"name\": \"WASD\",\n                    \"id\": \"00ca640b-d935-4593-8157-c05846ea39b3\",\n                   
-      \"path\": \"Dpad\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \"\",\n                   
-      \"action\": \"Move\",\n                    \"isComposite\": true,\n                   
-      \"isPartOfComposite\": false\n                },\n                {\n                   
-      \"name\": \"up\",\n                    \"id\": \"e2062cb9-1b15-46a2-838c-2f8d72a0bdd9\",\n                   
-      \"path\": \"<Keyboard>/w\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \";Keyboard&Mouse\",\n                   
-      \"action\": \"Move\",\n                    \"isComposite\": false,\n                   
-      \"isPartOfComposite\": true\n                },\n                {\n                   
-      \"name\": \"up\",\n                    \"id\": \"8180e8bd-4097-4f4e-ab88-4523101a6ce9\",\n                   
-      \"path\": \"<Keyboard>/upArrow\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \";Keyboard&Mouse\",\n                   
-      \"action\": \"Move\",\n                    \"isComposite\": false,\n                   
-      \"isPartOfComposite\": true\n                },\n                {\n                   
-      \"name\": \"down\",\n                    \"id\": \"320bffee-a40b-4347-ac70-c210eb8bc73a\",\n                   
-      \"path\": \"<Keyboard>/s\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \";Keyboard&Mouse\",\n                   
-      \"action\": \"Move\",\n                    \"isComposite\": false,\n                   
-      \"isPartOfComposite\": true\n                },\n                {\n                   
-      \"name\": \"down\",\n                    \"id\": \"1c5327b5-f71c-4f60-99c7-4e737386f1d1\",\n                   
-      \"path\": \"<Keyboard>/downArrow\",\n                    \"interactions\":
-      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
-      \";Keyboard&Mouse\",\n                    \"action\": \"Move\",\n                   
-      \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
-      },\n                {\n                    \"name\": \"left\",\n                   
-      \"id\": \"d2581a9b-1d11-4566-b27d-b92aff5fabbc\",\n                    \"path\":
-      \"<Keyboard>/a\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \";Keyboard&Mouse\",\n                   
-      \"action\": \"Move\",\n                    \"isComposite\": false,\n                   
-      \"isPartOfComposite\": true\n                },\n                {\n                   
-      \"name\": \"left\",\n                    \"id\": \"2e46982e-44cc-431b-9f0b-c11910bf467a\",\n                   
-      \"path\": \"<Keyboard>/leftArrow\",\n                    \"interactions\":
-      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
-      \";Keyboard&Mouse\",\n                    \"action\": \"Move\",\n                   
-      \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
-      },\n                {\n                    \"name\": \"right\",\n                   
-      \"id\": \"fcfe95b8-67b9-4526-84b5-5d0bc98d6400\",\n                    \"path\":
-      \"<Keyboard>/d\",\n                    \"interactions\": \"\",\n                   
-      \"processors\": \"\",\n                    \"groups\": \";Keyboard&Mouse\",\n                   
-      \"action\": \"Move\",\n                    \"isComposite\": false,\n                   
-      \"isPartOfComposite\": true\n                },\n                {\n                   
-      \"name\": \"right\",\n                    \"id\": \"77bff152-3580-4b21-b6de-dcd0c7e41164\",\n                   
-      \"path\": \"<Keyboard>/rightArrow\",\n                    \"interactions\":
-      \"\",\n                    \"processors\": \"\",\n                    \"groups\":
-      \";Keyboard&Mouse\",\n                    \"action\": \"Move\",\n                   
-      \"isComposite\": false,\n                    \"isPartOfComposite\": true\n               
-      },\n                {\n                    \"name\": \"\",\n                   
-      \"id\": \"22b1a222-080f-4c0a-a89e-bad4fedf11df\",\n                    \"path\":
-      \"<Keyboard>/space\",\n                    \"interactions\": \"\",\n                   
+      \"name\": \"\",\n                    \"id\": \"22b1a222-080f-4c0a-a89e-bad4fedf11df\",\n                   
+      \"path\": \"<Keyboard>/space\",\n                    \"interactions\": \"\",\n                   
       \"processors\": \"\",\n                    \"groups\": \"Keyboard&Mouse\",\n                   
       \"action\": \"Jump\",\n                    \"isComposite\": false,\n                   
       \"isPartOfComposite\": false\n                },\n                {\n                   
@@ -809,7 +751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5115ff20f1ea204dac14fa49c0e8f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 445, y: 385}
+  m_MinSize: {x: 445, y: 490}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Code Coverage
@@ -817,10 +759,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1080
-    y: 81
-    width: 551
-    height: 510
+    x: 788
+    y: 73
+    width: 888
+    height: 550
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -845,21 +787,21 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 854
-    y: 81
-    width: 577
-    height: 806
+    x: 788
+    y: 73
+    width: 888
+    height: 550
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 236
+    ID: 502
     splitterInitialOffset: 465
     currentActiveSplitter: -1
     realSizes:
-    - 509
-    - 227
+    - 332
+    - 148
     relativeSizes:
     - 0.6909722
     - 0.3090278
@@ -869,7 +811,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 736
+    lastTotalSize: 480
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -886,7 +828,7 @@ MonoBehaviour:
       name: TestLand
       fullName: TestLand
       resultStatus: 2
-      duration: 0.3212628
+      duration: 316.7447
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -897,12 +839,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1024
-      uniqueId: '[Tests][F:/TestLand/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1029
+      uniqueId: '[Tests][C:/Users/justl/Documents/DevStuff/TestLand/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
-      fullName: F:/TestLand/Library/ScriptAssemblies/Tests.dll
+      fullName: C:/Users/justl/Documents/DevStuff/TestLand/Library/ScriptAssemblies/Tests.dll
       resultStatus: 2
-      duration: 0.1482348
+      duration: 316.4641
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -911,14 +853,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1004
+      parentId: 1000
       parentUniqueId: '[TestLand][suite]'
     - id: 1001
-      uniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
-      name: JenniRunsTests
-      fullName: JenniRunsTests
+      uniqueId: Tests.dll/[Tests][JenniMenuTests][suite]
+      name: JenniMenuTests
+      fullName: JenniMenuTests
       resultStatus: 2
-      duration: 0.1421232
+      duration: 316.43967
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -927,12 +869,12 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1024
-      parentUniqueId: '[Tests][F:/TestLand/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1006
-      uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.CharacterMovementOnXAxis]
-      name: CharacterMovementOnXAxis
-      fullName: JenniRunsTests.CharacterMovementOnXAxis
+      parentId: 1029
+      parentUniqueId: '[Tests][C:/Users/justl/Documents/DevStuff/TestLand/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1002
+      uniqueId: Tests.dll/JenniMenuTests/[Tests][JenniMenuTests.CheckForJenniSaysButtonTest]
+      name: CheckForJenniSaysButtonTest
+      fullName: JenniMenuTests.CheckForJenniSaysButtonTest
       resultStatus: 0
       duration: 0
       messages: 
@@ -945,51 +887,89 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
-    - id: 1004
-      uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.JenniRunsTestsWithEnumeratorPasses]
-      name: JenniRunsTestsWithEnumeratorPasses
-      fullName: JenniRunsTests.JenniRunsTestsWithEnumeratorPasses
-      resultStatus: 1
-      duration: 0.1351792
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
-    - id: 1002
-      uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.PlayerHasAllPartsTest]
-      name: PlayerHasAllPartsTest
-      fullName: JenniRunsTests.PlayerHasAllPartsTest
-      resultStatus: 1
-      duration: 0.0239228
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
+      parentUniqueId: Tests.dll/[Tests][JenniMenuTests][suite]
     - id: 1003
-      uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.PlayerMovementTest]
-      name: PlayerMovementTest
-      fullName: JenniRunsTests.PlayerMovementTest
-      resultStatus: 2
-      duration: 0.1145945
-      messages: "  Player did not move using keyboard.\r\n  Expected: greater than
-        -7.0f\r\n  But was:  -7.0f\r\n"
+      uniqueId: Tests.dll/JenniMenuTests/[Tests][JenniMenuTests.CheckForJenniSaysSceneObjects]
+      name: CheckForJenniSaysSceneObjects
+      fullName: JenniMenuTests.CheckForJenniSaysSceneObjects
+      resultStatus: 0
+      duration: 0
+      messages: 
       output: 
-      stacktrace: 'at JenniRunsTests.PlayerMovementTest () [0x000a6] in F:\TestLand\Assets\Tests\JenniRunsTests.cs:61
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][JenniMenuTests][suite]
+    - id: 1003
+      uniqueId: Tests.dll/JenniMenuTests/[Tests][JenniMenuTests.CheckIfSceneIsLoading]
+      name: CheckIfSceneIsLoading
+      fullName: JenniMenuTests.CheckIfSceneIsLoading
+      resultStatus: 1
+      duration: 11.807624
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][JenniMenuTests][suite]
+    - id: 1001
+      uniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
+      name: JenniRunsTests
+      fullName: JenniRunsTests
+      resultStatus: 2
+      duration: 1.3993994
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: '[Tests][F:/TestLand/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1008
+      uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.CheckMaxFallVeloctyTest]
+      name: CheckMaxFallVeloctyTest
+      fullName: JenniRunsTests.CheckMaxFallVeloctyTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
+    - id: 1006
+      uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.PlayerGamePadJumpTest]
+      name: PlayerGamePadJumpTest
+      fullName: JenniRunsTests.PlayerGamePadJumpTest
+      resultStatus: 2
+      duration: 1.3699868
+      messages: "  Player did not jump using gamepad.\r\n  Expected: not equal to
+        -2.0f\r\n  But was:  -2.0f\r\n"
+      output: 
+      stacktrace: 'at JenniRunsTests+<PlayerGamePadJumpTest>d__7.MoveNext () [0x000b4]
+        in C:\Users\justl\Documents\DevStuff\TestLand\Assets\Tests\JenniRunsTests.cs:58
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\Users\justl\Documents\DevStuff\TestLand\Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
 
 '
       notRunnable: 0
@@ -998,17 +978,61 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
+      parentId: 1004
+      parentUniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
+    - id: 1002
+      uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.PlayerHasAllPartsTest]
+      name: PlayerHasAllPartsTest
+      fullName: JenniRunsTests.PlayerHasAllPartsTest
+      resultStatus: 1
+      duration: 0.1070246
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
       parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
+    - id: 1007
+      uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.PlayerKeyboardJumpTest]
+      name: PlayerKeyboardJumpTest
+      fullName: JenniRunsTests.PlayerKeyboardJumpTest
+      resultStatus: 2
+      duration: 0.7733191
+      messages: "  Player did not jump using keyboard.\r\n  Expected: greater than
+        -2.0f\r\n  But was:  -2.0f\r\n"
+      output: 
+      stacktrace: 'at JenniRunsTests+<PlayerKeyboardJumpTest>d__8.MoveNext () [0x000b7]
+        in C:\Users\justl\Documents\DevStuff\TestLand\Assets\Tests\JenniRunsTests.cs:69
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in C:\Users\justl\Documents\DevStuff\TestLand\Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
       parentUniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
     - id: 1003
       uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.SceneHasAllComponents]
       name: SceneHasAllComponents
       fullName: JenniRunsTests.SceneHasAllComponents
-      resultStatus: 1
-      duration: 0.0003693
-      messages: 
+      resultStatus: 2
+      duration: 0.151802
+      messages: "  Camera not found\r\n  Expected: True\r\n  But was:  null\r\n"
       output: 
-      stacktrace: 
+      stacktrace: 'at JenniRunsTests.SceneHasAllComponents () [0x0000c] in C:\Users\justl\Documents\DevStuff\TestLand\Assets\Tests\JenniRunsTests.cs:84
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1033,23 +1057,6 @@ MonoBehaviour:
       categories: []
       parentId: 1024
       parentUniqueId: '[Tests][F:/TestLand/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1008
-      uniqueId: Tests.dll/PlaymodeTests/[Tests][PlaymodeTests.CanPressButtonOnGamepad]
-      name: CanPressButtonOnGamepad
-      fullName: PlaymodeTests.CanPressButtonOnGamepad
-      resultStatus: 1
-      duration: 0.1056125
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: Tests.dll/[Tests][PlaymodeTests][suite]
     - id: 1006
       uniqueId: Tests.dll/PlaymodeTests/[Tests][PlaymodeTests.UserDataTest]
       name: UserDataTest
@@ -1383,10 +1390,10 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1015
       parentUniqueId: Tests.dll/UnityEditor/TestTools/SceneSmokeTests/[Tests][UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniSays.unity")][suite]
-    - id: 1034
-      uniqueId: '[Unity.InputSystem.IntegrationTests][F:/TestLand/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll][suite]'
+    - id: 1037
+      uniqueId: '[Unity.InputSystem.IntegrationTests][C:/Users/justl/Documents/DevStuff/TestLand/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll][suite]'
       name: Unity.InputSystem.IntegrationTests.dll
-      fullName: F:/TestLand/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
+      fullName: C:/Users/justl/Documents/DevStuff/TestLand/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
       resultStatus: 0
       duration: 0
       messages: 
@@ -1449,7 +1456,7 @@ MonoBehaviour:
       - Integration
       parentId: 1029
       parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
-    - id: 1034
+    - id: 1037
       uniqueId: Unity.InputSystem.IntegrationTests.dll/IntegrationTests/[Unity.InputSystem.IntegrationTests][IntegrationTests.WindowsInput_MouseMovements_AreDetected]
       name: WindowsInput_MouseMovements_AreDetected
       fullName: IntegrationTests.WindowsInput_MouseMovements_AreDetected
@@ -1464,9 +1471,9 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Integration
-      parentId: 1030
+      parentId: 1033
       parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
-    - id: 1033
+    - id: 1036
       uniqueId: Unity.InputSystem.IntegrationTests.dll/IntegrationTests/[Unity.InputSystem.IntegrationTests][IntegrationTests.WindowsInput_RemoteDesktopMouseMovements_AreDetected]
       name: WindowsInput_RemoteDesktopMouseMovements_AreDetected
       fullName: IntegrationTests.WindowsInput_RemoteDesktopMouseMovements_AreDetected
@@ -1481,19 +1488,15 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Integration
-      parentId: 1030
+      parentId: 1033
       parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
-    m_ResultText: "PlayerMovementTest (0.115s)\n---\nPlayer did not move using keyboard.\r\n 
-      Expected: greater than -7.0f\r\n  But was:  -7.0f\n---\nat JenniRunsTests.PlayerMovementTest
-      () [0x000a6] in F:\\TestLand\\Assets\\Tests\\JenniRunsTests.cs:61"
-    m_ResultStacktrace: 'at JenniRunsTests.PlayerMovementTest () [0x000a6] in F:\TestLand\Assets\Tests\JenniRunsTests.cs:61
-
-'
+    m_ResultText: 
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 3ad120e5
-      m_LastClickedID: -450834118
-      m_ExpandedIDs: 37b885b5fb42c6b558a208b61a55f0bbb33467bcd99807cefd54e5cee3fbebd07d5073d7e557abf7a62d080b67e3301bf0ab05440664c953ffffff7f
+      m_SelectedIDs: 0a9771e3
+      m_LastClickedID: -479095030
+      m_ExpandedIDs: 11de799737b885b5fb42c6b558a208b61a55f0bbb33467bcd99807cefd54e5cee3fbebd07d5073d7e557abf7a62d080b67e3301ba1c6d42ff0ab05440664c953ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1592,10 +1595,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 730
-    width: 845
-    height: 261
+    x: 0
+    y: 732
+    width: 787
+    height: 267
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1620,10 +1623,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1433
-    y: 81
-    width: 478
-    height: 910
+    x: 1678
+    y: 73
+    width: 241
+    height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1661,10 +1664,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 854
-    y: 642
-    width: 577
-    height: 349
+    x: 788
+    y: 644
+    width: 888
+    height: 355
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1682,22 +1685,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Resources/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Resources/Prefabs
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: F:\TestLand
+  m_LastProjectPath: C:\Users\justl\Documents\DevStuff\TestLand
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ca4e0000
-    m_LastClickedID: 20170
-    m_ExpandedIDs: 00000000ca4e0000cc4e0000ce4e0000da4e000000ca9a3b
+    m_SelectedIDs: 6c690000
+    m_LastClickedID: 26988
+    m_ExpandedIDs: 00000000e8680000ee68000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1725,7 +1728,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ca4e0000cc4e0000ce4e0000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1752,19 +1755,19 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: UserInputs
-      m_OriginalName: UserInputs
+      m_Name: WaitForSceneLoaded
+      m_OriginalName: WaitForSceneLoaded
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 24994
+      m_UserData: 30942
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -1801,10 +1804,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 81
-    width: 845
-    height: 628
+    x: 0
+    y: 73
+    width: 787
+    height: 638
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1851,10 +1854,10 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 845
-      height: 607
-    m_Scale: {x: 0.44010416, y: 0.44010416}
-    m_Translation: {x: 422.5, y: 303.5}
+      width: 787
+      height: 617
+    m_Scale: {x: 0.40989584, y: 0.40989584}
+    m_Translation: {x: 393.5, y: 308.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1862,12 +1865,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -960
-      y: -689.6095
+      y: -752.63025
       width: 1920
-      height: 1379.219
+      height: 1505.2605
     m_MinimalGUI: 1
-  m_defaultScale: 0.44010416
-  m_LastWindowPixelSize: {x: 845, y: 628}
+  m_defaultScale: 0.40989584
+  m_LastWindowPixelSize: {x: 787, y: 638}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -2220,10 +2223,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 854
-    y: 81
-    width: 577
-    height: 540
+    x: 788
+    y: 73
+    width: 888
+    height: 550
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2231,9 +2234,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e68affff
-      m_LastClickedID: -29978
-      m_ExpandedIDs: e88affff208bffff648cffffba8ffffff28fffff3691ffff1a92ffff5292ffff8293ffffbc97fffff497ffff3899ffff5e9affffa69affff209cffffb49dfffffc9dffff769fffff70a3ffffa8a3ffffeca4ffffd4a5ffff0aa6ffff6aa6fffffeaaffff36abffff6aacffff84afffffbcaffffffeb0ffff92b9ffffcab9ffffbabdffffa6d3ffffded3ffff1ad5ffff24d6ffff5cd6ffff8cd7ffff36daffff6edaffffa2dbffffa2e7ffff02fbffff14fbffffd64d0000dc4d0000fc4d0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: de7fffff1680fffff081ffff6483ffff9c83ffffbc84ffff3286ffff6a86ffffa687ffffee88ffff2689fffffe8affffa88dffffe08dffff208fffffec8fffff2490ffff6491ffff3092ffff6892ffffa893ffff7494ffffac94ffff8496ffff5897ffff9097ffff6699ffffde9affff169bffff549cffff089effff409effff16a0ffff00a2ffff38a2ffff06a4ffffc4a7fffffca7ffffcaa9ffff36abffff6eabffff3eadffff1eaeffff56aeffff24b0ffff92b1ffffcab1ffff98b3ffff3cb6ffff3eb6ffff76b6ffff46b8ffff1ebaffff56baffffe6bbffff28bdffff60bdfffff0beffffb4c3ffffecc3ffff78c5ffff0ec8ffff46c8ffffd4c9ffffe0cbffffe4cfffff1cd0ffff5ad1ffff38d2ffff70d2ffffaed3ffffc4d4fffffcd4ffff3ad6ffff1ed7ffff56d7ffff94d8ffff4ad9ffff82d9ffffc4daffff0cddfffffeddffff16770000b2790000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2249,7 +2252,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 13}
+        m_ClientGUIView: {fileID: 12}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0

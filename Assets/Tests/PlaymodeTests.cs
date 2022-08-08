@@ -15,7 +15,7 @@ public class PlaymodeTests : InputTestFixture
     public void UserDataTest()
     {
         var userData = new UserData(69, "TestUser");
-        Assert.That(userData.Id, Is.EqualTo(69), "Id is wrong.");
+        Assert.That(userData.Id, Is.EqualTo(42), "Id is wrong.");
         Assert.That(userData.UserName, Is.EqualTo("TestUser"), "User name is wrong.");
     }
 

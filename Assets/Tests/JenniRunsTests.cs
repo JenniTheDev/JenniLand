@@ -80,8 +80,8 @@ public class JenniRunsTests
     public void SceneHasAllComponents()
     {
         // How do I get the camera object?
-        // var camera = Camera.main.enabled;
-        // Assert.That(camera, Is.True, "Camera not found");
+        var camera = GameObject.Find("Main Camera"); // is not found
+        Assert.That(camera, Is.True, "Camera not found");
         Assert.That(player.gameObject, Is.Not.Null, "Player is missing");
     }
 }
