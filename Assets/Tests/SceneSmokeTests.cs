@@ -40,6 +40,7 @@ namespace UnityEditor.TestTools
         public IEnumerator RunsClean()
         {
             logSeverityTracker.Reset();
+            // Run all scene tests for that scene
             yield return new WaitForSeconds(secondsToWait);
             logSeverityTracker.AssertCleanLog();
         }

@@ -7,7 +7,7 @@ public class SceneChanger : MonoBehaviour
 {
     public void ChangeToJenniSays()
     {
-        SceneManager.LoadScene("JenniJump", LoadSceneMode.Single);
+        SceneManager.LoadScene("JenniSays", LoadSceneMode.Single);
     }
 
     public void ChangeToJenniRun()

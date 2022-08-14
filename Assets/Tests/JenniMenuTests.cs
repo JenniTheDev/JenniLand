@@ -52,12 +52,13 @@ public class JenniMenuTests
         var button = canvas.transform.Find("JenniSaysButton").GetComponent<Button>();
         Assert.That(button, Is.Not.Null, "JenniSays button not found.");
 
-        yield return null;
         EventSystem.current.SetSelectedGameObject(button.gameObject);
 
         button.GetComponent<Button>().onClick.Invoke();
-        var scene = SceneManager.GetSceneByName("JenniSays");
-        Assert.AreEqual(scene.name, "JenniSays", "JenniSays button did not open JenniSays scene.");
+        yield return new WaitForSceneLoaded("JenniSays");
+        AssertSceneLoaded("JenniSays");
+        var scene = SceneManager.GetActiveScene().name;
+        Assert.AreEqual(scene, "JenniSays", "JenniSays button did not open JenniSays scene.");
         AssertSceneLoaded("JenniSays");
     }
 
@@ -72,7 +73,7 @@ public class JenniMenuTests
         EventSystem.current.SetSelectedGameObject(button.gameObject);
 
         button.GetComponent<Button>().onClick.Invoke();
-        // var scene = SceneManager.GetSceneByName("JenniRun");
+        yield return new WaitForSceneLoaded("JenniRun");
         AssertSceneLoaded("JenniRun");
         var scene = SceneManager.GetActiveScene().name;
         Assert.AreEqual(scene, "JenniRun", "JenniRun button did not open JenniRun scene.");
@@ -91,10 +92,11 @@ public class JenniMenuTests
 
         button.GetComponent<Button>().onClick.Invoke();
         // var scene = SceneManager.GetSceneByName("JenniJump");
+        yield return new WaitForSceneLoaded("JenniJump");
         AssertSceneLoaded("JenniJump");
         var scene = SceneManager.GetActiveScene().name;
         Assert.AreEqual(scene, "JenniJump", "JenniJump button did not open JenniJump scene.");
-        yield return null;
+        // yield return null;
     }
 
     [Test]
@@ -108,7 +110,8 @@ public class JenniMenuTests
     [UnityTest]
     public IEnumerator TestSceneChangeToMainMenu()
     {
-        var sceneChanger = new SceneChanger();
+        GameObject gameObject = new GameObject();
+        var sceneChanger = gameObject.AddComponent(typeof(SceneChanger)) as SceneChanger;
         AssertSceneLoaded("JenniSays");
         sceneChanger.ChangeToMainMenu();
         AssertSceneLoaded("JenniMenu");
