@@ -123,6 +123,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &119017297 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7762537034620831301, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+  m_PrefabInstance: {fileID: 7979717765324716872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b305bb1af0c3368488397207113e72c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &119017298 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7979717764962718041, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+  m_PrefabInstance: {fileID: 7979717765324716872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1865280891057834989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -256,6 +278,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Jenni Says
       objectReference: {fileID: 0}
+    - target: {fileID: 7762537034620831301, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+      propertyPath: inputField
+      value: 
+      objectReference: {fileID: 119017298}
     - target: {fileID: 7979717763597872768, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -347,6 +373,38 @@ PrefabInstance:
     - target: {fileID: 7979717764962718023, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979717764962718041, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979717764962718041, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979717764962718041, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979717764962718041, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 119017297}
+    - target: {fileID: 7979717764962718041, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979717764962718041, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SaveUserName
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979717764962718041, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InputWindow, Tests
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979717764962718041, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 271173671009412228, guid: 3eb8e15c168ed48449e90c91dcb20802, type: 3}
