@@ -385,6 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3033d9c974da7e549bf3fd09c61e4b9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectSpawner: {fileID: 1926076864}
 --- !u!1 &1890663621
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,7 +480,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1890663621}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9d84e68c4ec8a4c45b952108222a8370, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -641,6 +642,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d60a2a79b689e45a3f11fc274ed219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnRate: 1.5
+  obstaclePoolSize: 20
+  bufferSize: 2
   obstaclesToSpawn:
   - {fileID: 3340045472993776849, guid: 19176ac80f3a0fe4b8033337c54ca889, type: 3}
   - {fileID: 2358149667604934303, guid: 90c57f4de40cf9343af9193c0782824e, type: 3}
@@ -708,7 +712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 920704349247397494, guid: 78de5928351d956429af942a180a6f09, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78de5928351d956429af942a180a6f09, type: 3}

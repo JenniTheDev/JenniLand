@@ -6,7 +6,6 @@ using UnityEngine;
 public class ObstacleMovement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 1.0f;
-    [SerializeField] private Vector2 movementDirection;
     private Transform cacheTransform;
 
     public void Awake()
@@ -21,6 +20,6 @@ public class ObstacleMovement : MonoBehaviour
 
     private void Move()
     {
-        cacheTransform.Translate(Time.deltaTime * movementSpeed * movementDirection);
+        cacheTransform.Translate(Time.deltaTime * movementSpeed * Vector2.left);
     }
 }

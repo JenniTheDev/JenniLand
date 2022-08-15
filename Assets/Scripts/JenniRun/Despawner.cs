@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class Despawner : MonoBehaviour
 {
+    [SerializeField] Spawner objectSpawner;
+
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.gameObject.SetActive(false);
+        objectSpawner.Return(collision.gameObject);
     }
 }
