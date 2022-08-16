@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private List<GameObject> obstaclesToSpawn;
     [SerializeField] private Stack<GameObject> obstaclePool = new();
     [SerializeField] private Transform obstacleContainer;
-    [SerializeField] private Collider spawnArea;
+    [SerializeField] private Transform spawnLocation;
 
     private int obstacleNumber;
 
@@ -27,22 +27,14 @@ public class Spawner : MonoBehaviour
         CheckAndSpawnBalls();
     }
 
-    private Vector2 GetSpawnLocation()
-    {
-        Vector2 spawn = spawnArea.bounds.center;
-        spawn.y = Random.Range(spawnArea.bounds.min.y, spawnArea.bounds.max.y);
-
-        return spawn;
-    }
-
     private void CheckAndSpawnBalls()
     {
         spawnDelayTimer -= Time.deltaTime;
         if (spawnDelayTimer <= 0f)
         {
             var goToSpawn = Get();
-            goToSpawn.transform.position = GetSpawnLocation();
-            
+            goToSpawn.transform.position = spawnLocation.position;
+
             spawnDelayTimer = spawnRate;
         }
     }
@@ -55,7 +47,7 @@ public class Spawner : MonoBehaviour
         {
             obstacleNumber = Random.Range(0, obstaclesToSpawn.Count);
             prefab = obstaclesToSpawn[obstacleNumber];
-            goToAdd = Instantiate(prefab, GetSpawnLocation(), prefab.transform.rotation, obstacleContainer);
+            goToAdd = Instantiate(prefab, spawnLocation.position, prefab.transform.rotation, obstacleContainer);
             goToAdd.SetActive(false);
             obstaclePool.Push(goToAdd);
             yield return null;
@@ -68,22 +60,22 @@ public class Spawner : MonoBehaviour
         if (obstaclePool.Count > bufferSize)
         {
             result = obstaclePool.Pop();
-
-        } else if (obstaclePool.Count > 0)
+        }
+        else if (obstaclePool.Count > 0)
         {
             result = obstaclePool.Pop();
             StartCoroutine(IncreasePool(bufferSize));
-        } else
+        }
+        else
         {
             obstacleNumber = Random.Range(0, obstaclesToSpawn.Count);
             var prefab = obstaclesToSpawn[obstacleNumber]; // here
-            result = Instantiate(prefab, GetSpawnLocation(), prefab.transform.rotation, obstacleContainer);
+            result = Instantiate(prefab, spawnLocation.position, prefab.transform.rotation, obstacleContainer);
             StartCoroutine(IncreasePool(bufferSize));
         }
         if (activateOnGet) { result.SetActive(true); }
         Debug.Log($"Get remaining: {obstaclePool.Count} ");
         return result;
-        
     }
 
     public void Return(GameObject toReturn)
@@ -92,5 +84,4 @@ public class Spawner : MonoBehaviour
         obstaclePool.Push(toReturn);
         Debug.Log($"Return remaining: {obstaclePool.Count} ");
     }
-
 }
