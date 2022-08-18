@@ -1,33 +1,54 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using TMPro;
 using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private float timer;
     [SerializeField] private TMP_Text timerText;
 
-    private float minutes;
-    private float seconds;
-    private float miliseconds;
+    public event Action<TimeSpan> OnTimerStopped;
 
-    public void Start()
+    public event Action<TimeSpan> OnTimerUpdated;
+
+    public TimeSpan TimeElapsed => DateTime.Now.Subtract(startTime);
+
+    private DateTime startTime;
+    private DateTime endTime;
+    private bool isRunning;
+
+    private void OnEnable()
     {
+        OnTimerUpdated += UpdateElapsedTimeDisplay;
     }
 
-    public void Update()
+    private void OnDisable()
     {
-        timer += Time.deltaTime;
-        // timerText.text = timer.ToString();
-        DisplayTime();
+        OnTimerUpdated -= UpdateElapsedTimeDisplay;
     }
 
-    private void DisplayTime()
+    private void Update()
     {
-        // minutes = Mathf.FloorToInt(timer / 60);
-        seconds = Mathf.FloorToInt(timer % 60);
-        miliseconds = (timer % 1) * 10000000;
-        timerText.text = string.Format($"{seconds}:{miliseconds}");
+        if (isRunning)
+        {
+            OnTimerUpdated?.Invoke(TimeElapsed);
+        }
+    }
+
+    public void ResetTimer()
+    {
+        isRunning = true;
+        startTime = DateTime.Now;
+    }
+
+    public void StopTimer()
+    {
+        isRunning = false;
+        endTime = DateTime.Now;
+        OnTimerStopped?.Invoke(TimeElapsed);
+    }
+
+    public void UpdateElapsedTimeDisplay(TimeSpan elapsedTime)
+    {
+        timerText.text = $"{TimeElapsed.ToString("ss''ff")}";
     }
 }
