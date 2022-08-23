@@ -5,10 +5,7 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     [SerializeField] private TMP_Text timerText;
-
-    public event Action<TimeSpan> OnTimerStopped;
-
-    public event Action<TimeSpan> OnTimerUpdated;
+    [SerializeField] private JenniRunEventManager gameEventManager;
 
     public TimeSpan TimeElapsed => DateTime.Now.Subtract(startTime);
 
@@ -18,19 +15,23 @@ public class Timer : MonoBehaviour
 
     private void OnEnable()
     {
-        OnTimerUpdated += UpdateElapsedTimeDisplay;
+        gameEventManager.OnTimerUpdated += UpdateElapsedTimeDisplay;
+        gameEventManager.OnJenniRunGameStart += ResetTimer;
+        gameEventManager.OnJenniRunGameStop += StopTimer;
     }
 
     private void OnDisable()
     {
-        OnTimerUpdated -= UpdateElapsedTimeDisplay;
+        gameEventManager.OnTimerUpdated -= UpdateElapsedTimeDisplay;
+        gameEventManager.OnJenniRunGameStart -= ResetTimer;
+        gameEventManager.OnJenniRunGameStop -= StopTimer;
     }
 
     private void Update()
     {
         if (isRunning)
         {
-            OnTimerUpdated?.Invoke(TimeElapsed);
+            gameEventManager.RaiseTimerUpdated(TimeElapsed);
         }
     }
 
@@ -44,7 +45,7 @@ public class Timer : MonoBehaviour
     {
         isRunning = false;
         endTime = DateTime.Now;
-        OnTimerStopped?.Invoke(TimeElapsed);
+        gameEventManager.RaiseStopTimer(TimeElapsed);
     }
 
     public void UpdateElapsedTimeDisplay(TimeSpan elapsedTime)
