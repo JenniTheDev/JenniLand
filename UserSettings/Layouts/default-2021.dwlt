@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 659
     width: 1007
     height: 288
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 21
+  controlID: 105
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 91
+  controlID: 26
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 92
+  controlID: 27
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -215,15 +215,15 @@ MonoBehaviour:
     y: 0
     width: 1007
     height: 659
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 21}
   - {fileID: 20}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 99
+  controlID: 34
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneHierarchyWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -294,15 +294,15 @@ MonoBehaviour:
     y: 0
     width: 479
     height: 438
-  m_MinSize: {x: 200, y: 200}
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 22}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 22}
   - {fileID: 16}
   - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -787,31 +787,31 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 788
+    x: 1007
     y: 73
-    width: 888
-    height: 550
+    width: 477
+    height: 417
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 167
-    splitterInitialOffset: 465
+    ID: 1652
+    splitterInitialOffset: 313
     currentActiveSplitter: -1
     realSizes:
-    - 332
-    - 148
+    - 243
+    - 104
     relativeSizes:
-    - 0.6909722
-    - 0.3090278
+    - 0.7002882
+    - 0.29971182
     minSizes:
     - 32
     - 32
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 480
+    lastTotalSize: 347
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -827,9 +827,9 @@ MonoBehaviour:
       uniqueId: '[TestLand][suite]'
       name: TestLand
       fullName: TestLand
-      resultStatus: 2
-      duration: 316.7447
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 7.418882
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -839,13 +839,13 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1029
-      uniqueId: '[Tests][C:/Users/justl/Documents/DevStuff/TestLand/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1037
+      uniqueId: '[Tests][F:/TestLand/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
-      fullName: C:/Users/justl/Documents/DevStuff/TestLand/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 2
-      duration: 316.4641
-      messages: One or more child tests had errors
+      fullName: F:/TestLand/Library/ScriptAssemblies/Tests.dll
+      resultStatus: 1
+      duration: 7.251081
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -977,9 +977,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
       name: JenniRunsTests
       fullName: JenniRunsTests
-      resultStatus: 2
-      duration: 1.3993994
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 7.238771
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1027,6 +1027,23 @@ MonoBehaviour:
       uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.CheckNumberOfPlayers]
       name: CheckNumberOfPlayers
       fullName: JenniRunsTests.CheckNumberOfPlayers
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
+    - id: 1017
+      uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.EndTimerTest]
+      name: EndTimerTest
+      fullName: JenniRunsTests.EndTimerTest
       resultStatus: 0
       duration: 0
       messages: 
@@ -1125,6 +1142,41 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
+    - id: 1016
+      uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.StartButtonTest]
+      name: StartButtonTest
+      fullName: JenniRunsTests.StartButtonTest
+      resultStatus: 1
+      duration: 2.1683626
+      messages: 
+      output: "Get remaining: 19 \r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
+    - id: 1017
+      uniqueId: Tests.dll/JenniRunsTests/[Tests][JenniRunsTests.StartTimerTest]
+      name: StartTimerTest
+      fullName: JenniRunsTests.StartTimerTest
+      resultStatus: 1
+      duration: 7.224069
+      messages: 
+      output: "Get remaining: 19 \r\nGet remaining: 18 \r\nGet remaining: 17 \r\nGet
+        remaining: 16 \r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
       parentUniqueId: Tests.dll/[Tests][JenniRunsTests][suite]
     - id: 1005
       uniqueId: Tests.dll/[Tests][PlaymodeTests][suite]
@@ -1475,10 +1527,10 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1015
       parentUniqueId: Tests.dll/UnityEditor/TestTools/SceneSmokeTests/[Tests][UnityEditor.TestTools.SceneSmokeTests("Assets/Scenes/JenniSays.unity")][suite]
-    - id: 1037
-      uniqueId: '[Unity.InputSystem.IntegrationTests][C:/Users/justl/Documents/DevStuff/TestLand/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll][suite]'
+    - id: 1045
+      uniqueId: '[Unity.InputSystem.IntegrationTests][F:/TestLand/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll][suite]'
       name: Unity.InputSystem.IntegrationTests.dll
-      fullName: C:/Users/justl/Documents/DevStuff/TestLand/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
+      fullName: F:/TestLand/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
       resultStatus: 0
       duration: 0
       messages: 
@@ -1541,7 +1593,7 @@ MonoBehaviour:
       - Integration
       parentId: 1029
       parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
-    - id: 1042
+    - id: 1045
       uniqueId: Unity.InputSystem.IntegrationTests.dll/IntegrationTests/[Unity.InputSystem.IntegrationTests][IntegrationTests.WindowsInput_MouseMovements_AreDetected]
       name: WindowsInput_MouseMovements_AreDetected
       fullName: IntegrationTests.WindowsInput_MouseMovements_AreDetected
@@ -1556,9 +1608,9 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Integration
-      parentId: 1038
+      parentId: 1041
       parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
-    - id: 1041
+    - id: 1044
       uniqueId: Unity.InputSystem.IntegrationTests.dll/IntegrationTests/[Unity.InputSystem.IntegrationTests][IntegrationTests.WindowsInput_RemoteDesktopMouseMovements_AreDetected]
       name: WindowsInput_RemoteDesktopMouseMovements_AreDetected
       fullName: IntegrationTests.WindowsInput_RemoteDesktopMouseMovements_AreDetected
@@ -1573,15 +1625,16 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Integration
-      parentId: 1038
+      parentId: 1041
       parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
-    m_ResultText: 
+    m_ResultText: "StartTimerTest (7.224s)\n---\nGet remaining: 19 \r\nGet remaining:
+      18 \r\nGet remaining: 17 \r\nGet remaining: 16"
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0a9771e3
-      m_LastClickedID: -479095030
-      m_ExpandedIDs: 11de799737b885b5fb42c6b558a208b61a55f0bbb33467bcd99807cefd54e5cee3fbebd07d5073d7e557abf7a62d080b67e3301ba1c6d42ff0ab05440664c953ffffff7f
+      m_SelectedIDs: 699479c8
+      m_LastClickedID: -931556247
+      m_ExpandedIDs: 11de799737b885b5fb42c6b558a208b61a55f0bbb33467bcd99807cefd54e5cee3fbebd07d5073d7e557abf7a62d080b67e3301bf0ab05440664c953ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1723,7 +1776,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 95
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -1770,22 +1823,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/JenniRun
+    - Assets/Resources/ScriptableObjects
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/JenniRun
+  - Assets/Resources/ScriptableObjects
   m_LastFoldersGridSize: 16
   m_LastProjectPath: F:\TestLand
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 144f0000
-    m_LastClickedID: 20244
-    m_ExpandedIDs: 00000000f44e0000f64e0000f84e0000fa4e00000e4f000000ca9a3b
+    m_SelectedIDs: 344f0000
+    m_LastClickedID: 20276
+    m_ExpandedIDs: 000000001c4f00001e4f0000204f0000224f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1813,7 +1866,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f44e0000f64e0000f84e0000fa4e0000
+    m_ExpandedIDs: 000000001c4f00001e4f0000204f0000224f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1840,7 +1893,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -2208,9 +2261,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 692.30396, y: 940.7256, z: -11.179929}
+    m_Target: {x: 10, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 692.30396, y: 940.7256, z: -11.179929}
+    m_Value: {x: 10, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2261,9 +2314,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1154.6377
+    m_Target: 10
     speed: 2
-    m_Value: 1154.6377
+    m_Value: 10
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -2319,9 +2372,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: da4d0000
-      m_LastClickedID: 19930
-      m_ExpandedIDs: 08c5ffff72c5ffff14fbfffff04d0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 3ae9ffff72e9ffffa8ebffff9cecffffd4ecffff0aefffff80f2ffffb8f2fffff2f4ffff78f6ffff5af8ffff62f8ffff74f8ffff86f8ffff14fbffff2a5f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

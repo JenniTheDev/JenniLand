@@ -1,9 +1,11 @@
 using System.Collections;
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
+using UnityEngine.UI;
 
 public class JenniRunsTests
 {
@@ -100,6 +102,35 @@ public class JenniRunsTests
         var camera = GameObject.Find("Main Camera"); // is not found
         Assert.That(camera, Is.True, "Camera not found");
         Assert.That(player.gameObject, Is.Not.Null, "Player is missing");
+    }
+
+    [Test]
+    public void StartButtonTest()
+    {
+        var canvas = GameObject.Find("Canvas");
+        Assert.That(canvas, Is.Not.Null, "Canvas not found");
+        var startButton = canvas.transform.Find("StartButton").GetComponent<Button>();
+        Assert.That(startButton, Is.Not.Null, "Start button not found");
+    }
+
+    [UnityTest]
+    public IEnumerator StartTimerTest()
+    {
+        var canvas = GameObject.Find("Canvas");
+        Assert.That(canvas, Is.Not.Null, "Canvas not found");
+        var startButton = canvas.transform.Find("StartButton").GetComponent<Button>();
+        Assert.That(startButton, Is.Not.Null, "Start button not found");
+
+        EventSystem.current.SetSelectedGameObject(startButton.gameObject);
+        startButton.GetComponent<Button>().onClick.Invoke();
+        // check that timer started
+        yield return new WaitForSeconds(5f);
+    }
+
+    [UnityTest]
+    public IEnumerator EndTimerTest()
+    {
+        yield return new WaitForSeconds(5f);
     }
 
     // This needs to be moved to a helper class
