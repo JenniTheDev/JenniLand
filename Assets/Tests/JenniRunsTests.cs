@@ -1,5 +1,6 @@
 using System.Collections;
 using NUnit.Framework;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -46,7 +47,6 @@ public class JenniRunsTests
     public void CheckNumberOfPlayers()
     {
         var playerList = GameObject.FindGameObjectsWithTag("Player");
-        // any number but one player
         Assert.AreEqual(1, playerList.Length, "More then one player.");
     }
 
@@ -102,10 +102,12 @@ public class JenniRunsTests
         var camera = GameObject.Find("Main Camera"); // is not found
         Assert.That(camera, Is.True, "Camera not found");
         Assert.That(player.gameObject, Is.Not.Null, "Player is missing");
+        var gameManager = GameObject.Find("JenniRunEventManager");
+        Assert.That(gameManager, Is.Not.Null, "Game manager not found.");
     }
 
     [Test]
-    public void StartButtonTest()
+    public void FindStartButtonTest()
     {
         var canvas = GameObject.Find("Canvas");
         Assert.That(canvas, Is.Not.Null, "Canvas not found");
@@ -114,7 +116,7 @@ public class JenniRunsTests
     }
 
     [UnityTest]
-    public IEnumerator StartTimerTest()
+    public IEnumerator StartTimerWithStartButtonTest()
     {
         var canvas = GameObject.Find("Canvas");
         Assert.That(canvas, Is.Not.Null, "Canvas not found");
@@ -123,7 +125,20 @@ public class JenniRunsTests
 
         EventSystem.current.SetSelectedGameObject(startButton.gameObject);
         startButton.GetComponent<Button>().onClick.Invoke();
-        // check that timer started
+
+        var timer = canvas.transform.Find("Timer");
+        Assert.That(timer, Is.Not.Null, "Can't find timer.");
+        var time = timer.gameObject.GetComponent<TMP_Text>().text;
+        yield return new WaitForSeconds(5f);
+        var timePassed = timer.gameObject.GetComponent<TMP_Text>().text;
+        Assert.IsTrue(time != timePassed, "Time did not advance.");
+    }
+
+    [UnityTest]
+    public IEnumerator GameStartEventTest()
+    {
+        var manager = GameObject.FindObjectOfType<TestManager>();
+        Assert.That(manager, Is.Not.Null, "Can't find Test manager.");
         yield return new WaitForSeconds(5f);
     }
 

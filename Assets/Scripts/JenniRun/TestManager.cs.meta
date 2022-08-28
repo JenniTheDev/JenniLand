@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 9b551336d730f7844824d712b375a628
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - <JenniRunEventManager>k__BackingField: {fileID: 11400000, guid: d919a5f05ae88be48b99dc466500f491, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

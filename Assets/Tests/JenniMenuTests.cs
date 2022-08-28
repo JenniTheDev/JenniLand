@@ -31,8 +31,6 @@ public class JenniMenuTests
         gamepad = null;
         keyboard = null;
         inputTestFixture.TearDown();
-        // This gives warnings if used
-        // SceneManager.UnloadSceneAsync("JenniMenu");
     }
 
     [UnityTest]
@@ -91,12 +89,10 @@ public class JenniMenuTests
         EventSystem.current.SetSelectedGameObject(button.gameObject);
 
         button.GetComponent<Button>().onClick.Invoke();
-        // var scene = SceneManager.GetSceneByName("JenniJump");
         yield return new WaitForSceneLoaded("JenniJump");
         AssertSceneLoaded("JenniJump");
         var scene = SceneManager.GetActiveScene().name;
         Assert.AreEqual(scene, "JenniJump", "JenniJump button did not open JenniJump scene.");
-        // yield return null;
     }
 
     [Test]

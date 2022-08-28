@@ -69,12 +69,12 @@ public class Spawner : MonoBehaviour
         else
         {
             obstacleNumber = Random.Range(0, obstaclesToSpawn.Count);
-            var prefab = obstaclesToSpawn[obstacleNumber]; // here
+            var prefab = obstaclesToSpawn[obstacleNumber];
             result = Instantiate(prefab, spawnLocation.position, prefab.transform.rotation, obstacleContainer);
             StartCoroutine(IncreasePool(bufferSize));
         }
         if (activateOnGet) { result.SetActive(true); }
-        Debug.Log($"Get remaining: {obstaclePool.Count} ");
+        // Debug.Log($"Get remaining: {obstaclePool.Count} ");
         return result;
     }
 
