@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2141406521256296656}
   - component: {fileID: 5831170516261403263}
   - component: {fileID: 2933887356067638140}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: ObstacleTallRectangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
