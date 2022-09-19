@@ -7,6 +7,11 @@ public class ObstacleCollider : MonoBehaviour
     [SerializeField] private JenniRunEventManager gameEventManager;
     [SerializeField] private LayerMask obstacleLayer;
 
+    public void Start()
+    {
+        obstacleLayer = LayerMask.NameToLayer("Obstacle");
+    }
+
     private void OnEnable()
     {
     }
