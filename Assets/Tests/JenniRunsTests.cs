@@ -59,6 +59,11 @@ public class JenniRunsTests
         Assert.That(player.GetComponent<JumpControl>(), Is.Not.Null, "Player input is missing");
     }
 
+    [Test]
+    public void ObstacleHasAllPartsTest()
+    {
+    }
+
     [UnityTest]
     public IEnumerator PlayerGamePadJumpTest()
     {
@@ -98,11 +103,10 @@ public class JenniRunsTests
     [Test]
     public void SceneHasAllComponents()
     {
-        // How do I get the camera object?
-        var camera = GameObject.Find("Main Camera"); // is not found
-        Assert.That(camera, Is.True, "Camera not found");
+        var camera = Camera.main;
+        Assert.That(camera, Is.Not.Null, "Camera not found");
         Assert.That(player.gameObject, Is.Not.Null, "Player is missing");
-        var gameManager = GameObject.Find("JenniRunEventManager");
+        var gameManager = GameObject.Find("JenniRunEventManager"); // Not found
         Assert.That(gameManager, Is.Not.Null, "Game manager not found.");
     }
 
@@ -118,6 +122,8 @@ public class JenniRunsTests
     [UnityTest]
     public IEnumerator StartTimerWithStartButtonTest()
     {
+        // tests should still work if the design changes and the code doesn't
+        // tags ok for tests
         var canvas = GameObject.Find("Canvas");
         Assert.That(canvas, Is.Not.Null, "Canvas not found");
         var startButton = canvas.transform.Find("StartButton").GetComponent<Button>();
@@ -146,6 +152,22 @@ public class JenniRunsTests
     public IEnumerator EndTimerTest()
     {
         yield return new WaitForSeconds(5f);
+    }
+
+    [Test]
+    public void CheckIfObstacleColliderWorks()
+    {
+        // check if collider exists
+    }
+
+    [Test]
+    public void CheckIfSpawnerStartsSpawning()
+    {
+    }
+
+    [Test]
+    public void GameOverOnCollisionTest()
+    {
     }
 
     // This needs to be moved to a helper class
