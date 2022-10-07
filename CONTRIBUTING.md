@@ -25,7 +25,7 @@ Once you have made all your changes, make sure everything is [pushed](https://su
   
 ## Using Unity <a name="unity"></a> <br>
  
-This project uses Unity version 2020.2.3f1, and you should do the same. The [Unity Hub](https://docs.unity3d.com/2018.3/Documentation/Manual/GettingStartedInstallingHub.html) is good to have if you don't. 
+This project uses Unity version 2021.3.3f1, and you should do the same. The [Unity Hub](https://docs.unity3d.com/2018.3/Documentation/Manual/GettingStartedInstallingHub.html) is good to have if you don't. 
   
 To make things easier for me to maintain, and for everyone to get their PRs approved, please make a scene for yourself. Do all of your work and changes in it. Make [prefabs](https://docs.unity3d.com/Manual/CreatingPrefabs.html) of the objects you make so others can use it, and use other prefabs in your scene. 
   
