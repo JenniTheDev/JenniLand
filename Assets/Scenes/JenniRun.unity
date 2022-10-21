@@ -791,6 +791,27 @@ Transform:
   m_Father: {fileID: 1926076863}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &855834362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 920704349247397494, guid: 78de5928351d956429af942a180a6f09, type: 3}
+  m_PrefabInstance: {fileID: 920704349053724220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &855834363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855834362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d46585340a848e438deb1fd216789ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventManager: {fileID: 11400000, guid: d919a5f05ae88be48b99dc466500f491, type: 2}
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 16384
 --- !u!1 &1385632047
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,6 +1358,7 @@ MonoBehaviour:
   - {fileID: 2141406521256296671, guid: f7f546dbfbbf03b46b38062c9273b3c5, type: 3}
   obstacleContainer: {fileID: 710707424}
   spawnLocation: {fileID: 1924688500}
+  gameEventManager: {fileID: 11400000, guid: d919a5f05ae88be48b99dc466500f491, type: 2}
 --- !u!1 &2053124789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,6 +1501,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 331569857, guid: 78de5928351d956429af942a180a6f09, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 4096
+      objectReference: {fileID: 0}
     - target: {fileID: 920704349053724222, guid: 78de5928351d956429af942a180a6f09, type: 3}
       propertyPath: m_Constraints
       value: 5

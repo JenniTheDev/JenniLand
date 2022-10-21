@@ -14,6 +14,11 @@ public class JumpControl : MonoBehaviour
     [SerializeField] private float snapForce;
     [SerializeField] private LayerMask groundLayer;
 
+    public bool IsGrounded => Physics2D.Raycast(playerCollider.transform.position, Vector2.down, JumpCheckDistance, groundLayer);
+
+    private float DistToFloor => playerCollider.bounds.extents.y;
+    private float JumpCheckDistance => DistToFloor + GROUND_BUFFER;
+
     private Rigidbody2D rBody;
     private Transform cachedTransform;
     private Collider2D playerCollider;
@@ -38,18 +43,10 @@ public class JumpControl : MonoBehaviour
 
     private void Jump()
     {
-        var hits = Physics2D.RaycastAll(cachedTransform.position, Vector2.down, GetBottomOfCharacter(), 1 << groundLayer);
-        foreach (var hit in hits)
+        if (IsGrounded)
         {
-            Debug.Log($"{hit.transform.gameObject.layer} == {1 << groundLayer}");
-            if (hit.transform.gameObject.layer == (1 << groundLayer))
-            {
-                rBody.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
-            }
+            rBody.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
         }
-
-        float GetBottomOfCharacter()
-        => playerCollider.bounds.extents.y + GROUND_BUFFER;
     }
 
     private void CheckJumpVelocity()

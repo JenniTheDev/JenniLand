@@ -11,8 +11,11 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Stack<GameObject> obstaclePool = new();
     [SerializeField] private Transform obstacleContainer;
     [SerializeField] private Transform spawnLocation;
+    [SerializeField] private JenniRunEventManager gameEventManager;
 
     private int obstacleNumber;
+
+    private bool isSpawning;
 
     private float spawnDelayTimer;
 
@@ -24,7 +27,27 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
-        CheckAndSpawnBalls();
+        if (isSpawning)
+        {
+            CheckAndSpawnBalls();
+        }
+    }
+
+    private void OnEnable()
+    {
+        gameEventManager.OnJenniRunGameStart += StartSpawning;
+        gameEventManager.OnJenniRunGameStop += StopSpawning;
+    }
+
+    private void OnDisable()
+    {
+        gameEventManager.OnJenniRunGameStart -= StartSpawning;
+        gameEventManager.OnJenniRunGameStop -= StopSpawning;
+    }
+
+    private void StartSpawning()
+    {
+        isSpawning = true;
     }
 
     private void CheckAndSpawnBalls()
@@ -82,6 +105,20 @@ public class Spawner : MonoBehaviour
     {
         toReturn.SetActive(false);
         obstaclePool.Push(toReturn);
-        Debug.Log($"Return remaining: {obstaclePool.Count} ");
+        // Debug.Log($"Return remaining: {obstaclePool.Count} ");
+    }
+
+    private void StopSpawning()
+    {
+        isSpawning = false;
+        ResetSpawner();
+    }
+
+    private void ResetSpawner()
+    {
+        foreach (Transform child in obstacleContainer)
+        {
+            Return(child.gameObject);
+        }
     }
 }
